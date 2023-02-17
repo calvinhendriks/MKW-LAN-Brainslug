@@ -56,14 +56,22 @@ The SD card needs to be formatted in a proper way, otherwise you will get green 
 - Next, if your SD card is larger than 32GB (i.e. 64GB and up) run FAT32 GUI formatter as Administrator. Select your SD card and Set Allocation size unit to 4096 bytes. Make sure Quick Format is checked. Click on start.
 
 
-## 6. Instructions (Wiimms Mario Kart Fun):
+## 6. Instructions 
+## 6.1 Wiimms Mario Kart Fun:
 The files in root_SD are compiled to play Wiimms Mario Kart Fun 2022-11 in LAN mode. The only thing im missing is the cheat that Wiimm patches through the iso builder. He uses a rather unknown .gch file. Don't know exactly what features are enabled through this file, but the tracks load and the LAN mode works. Here's how to do it:/
 - Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun 
 - Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes  (check section 11 for recommended cheats)
 - place the files in /root_SD on the root of your SD card 
-- Load a vanilla mario kart wii through USB Loader GX 
-- Select options and set alternate dol to "load from USB/SD" 
+- load a vanilla mario kart through USB Loader GX and set Alternate DOL to "Load From SD/USB" (Settings -> Game Load -> Alternate DOL)
 
+
+## 6.2 Variety Pack V3.
+The files inside this github repo also support Variety Pack V3. You can download it by becoming a tester in the discord channel (see https://wiki.tockdom.com/wiki/Variety_Pack) 
+- take the files from varietyPackV3Testing/varietypack and place them in root_SD/varietypack
+- rename root_SD/bslug/ to something else (e.g., bslug-wiimm, because these files are for the Wiimms Fun distro)
+- rename root_SD/bslug_vp to bslug
+- place the files in root_SD/ on the root of your SD card
+- load a vanilla mario kart through USB Loader GX and set Alternate DOL to "Load From SD/USB" (Settings -> Game Load -> Alternate DOL)
 
 ## 7. Instruction (other distros)
 - Take a look at the ISO builder script or riivolution .xml file.
