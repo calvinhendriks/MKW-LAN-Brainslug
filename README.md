@@ -11,6 +11,7 @@ Shoutouts:
 - Yuri Bacon for this post on mariokartwii.com (https://mariokartwii.com/showthread.php?tid=1891) 
 - Lami for his KamekLoader brainslug module (https://github.com/Lami-Lemmy/brainslug-wii/tree/vp3Loader/modules/vpKamekLoader) 
 - BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)
+- Wiimms for his awesome work on Wiimms Mario Kart Fun (https://wiki.tockdom.com/wiki/Wiimms_Mario_Kart_Fun_2022-11) (and Wiimmfi and much more ofcourse)
 
 Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
 
@@ -41,6 +42,6 @@ Custom Distributions also often patch main.dol files to include cheat codes into
 
 
 ## Details
-The KameKLoader looks for Loader.bin inside sd_Card:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
-
+- The KameKLoader looks for Loader.bin inside sd_Card:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
+- For the same reason, Loader.bin looks for E/J/P/K.bin inside varietypack/ on the iso. Therefore, the replacements that Emvolution does should place these binaries there.
 
