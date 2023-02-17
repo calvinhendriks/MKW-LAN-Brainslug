@@ -86,5 +86,5 @@ Shoutouts:
 - Wiimm for his awesome work on Wiimms Mario Kart Fun (https://wiki.tockdom.com/wiki/Wiimms_Mario_Kart_Fun_2022-11) (and Wiimmfi and much more ofcourse)
 
 ## 9. FAQ
-- Why do i need to format twice.
+- Why do i need to format twice.\
 The SD/SDHC/SDXC memory cards have a "Protected Area" on the card for the SD standard's security function. The SD Formatter (from SD Associatino) does not format the "Protected Area". The Wii is very picky when it comes to SD cards. I got the best results if i first ran this formatter. However, this tool sets the cluster size based on the total size of the SD card. According to this page (https://wiibrew.org/wiki/SD/SDHC_card_compatibility_tests), issues can sometimes be fixed by setting cluster size to 4096 bytes. This is where FAT32 GUI Formatter comes in.
