@@ -40,3 +40,7 @@ Custom Distributions also often patch main.dol files to include cheat codes into
 - Select options and set alternate dol to "load from USB/SD" 
 
 
+## Details
+The KameKLoader looks for Loader.bin inside sd_Card:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
+
+
