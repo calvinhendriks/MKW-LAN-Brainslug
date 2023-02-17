@@ -68,11 +68,12 @@ Inside the bslug folder you will find 8 brainslug modules. Here is a short descr
 | libfat.mod        | default module. needed for Emvolution                                                                                                                                                                              |
 | libsd.mod         | default module. needed for Emvolution                                                                                                                                                                              |
 | libfat-sd.mod     | default module. needed for Emvolution                                                                                                                                                                              |
-| Emvolution.mod    | File replacements, like Riivolution. Does not support patched main.dol (e.g. to load le-code)                                                                                                                      |
-| KamekLoader.mod   | Module to load the kamek loader (loader.bin).   |
 | rmc-local-net.mod | LAN Mod from Chadderz & MrBean35000vr                                                                                                                                                                              |
 | console-sd.mod    | creates a log file on root of sd.                                                                                                                                                                                  |
 | gct.mod           | To load cheat codes  
+
+| Emvolution.mod    | File replacements, like Riivolution. Does not support patched main.dol (e.g. to load le-code)                                                                                                                      |
+| KamekLoader.mod   | Module to load the kamek loader (loader.bin).   |
 
 
 ## 8. Credits
