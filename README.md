@@ -3,6 +3,12 @@ Basically, this github combines a few projects in order to play Mario Kart Wii (
 This allows up to 12 players (2 per wii) to play together, no disc required! \
 \
 Only tested on PAL!
+
+Features:
+- LAN mode
+- Custom Tracks (LE-CODE support)
+- Cheat codes
+- USB Load **or** Disc load
       
 
 ## 1. Background
