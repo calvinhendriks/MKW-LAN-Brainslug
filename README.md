@@ -17,7 +17,7 @@ I knew there was a LAN mod that makes the Wiis talk to each other directly (http
 - No support for custom distributions.
 - No way to USB load the game
 
-While I was willing to buy 6 MKW discs, the first 2 problems are a major issue for me. The cheats are needed because by default, the character/vehicle & track selection menus have a timer of 30 seconds. If you want to take a break between races, this is not possible, since the wii's will automatically select a character/vehicle and a track and the next race will load. Another example is that by default, 30 seconds after the first player crosses the finish line, the game will end. In a large LAN setup,  there might be some skill differences and 
+While I was willing to buy 6 MKW discs, the first 2 problems are a major issue for me. The cheats are needed because by default, the character/vehicle & track selection menus have a timer of 30 seconds. If you want to take a break between races, this is not possible, since the wii's will automatically select a character/vehicle and a track and the next race will load. Another example is that by default, 30 seconds after the first player crosses the finish line, the game will end. In a large LAN setup,  there might be some skill differences and we would like everyone to be able to finish.
 
 ### Solution Part 1
 Then I discovered this post https://mariokartwii.com/showthread.php?tid=1891. In this post, Yuri explains the same problems as I had, but finds a solution that enables us to load a game from USB through the brainslug main.dol. Basically, you can tell USB loader GX to load an alternate dol file (other than the main.dol from the game).
@@ -25,24 +25,34 @@ If you rename the boot.dol from BrainSlug to RCMX01.dol and place it on the root
 So, now 2 of the 3 problems indicated above are solved. 
 
 ### Solution Part 2
-For the custom distribution part, Yuri already points is in the right direction. You see, 
-The problem with Emvolution is that it does not support patched main.dol files. Custom distributions often patch main.dol to load le-code.bin. 
-This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load le-code.bin 
-In variety pack, E/J/P/K.bin also adds other functionality to the game.
-Custom Distributions also often patch main.dol files to include cheat codes into their games. These cheats can be loaded by using the gct.mod Brainslug module.
+Now we only need to solve the custom distribution issue. 
+Custom Distributions often come in 2 flavours: 
+- A ISO Builder script
+- A riivolution folder.
+These roughly do the same thing; The ISO Builder extracts the files from a supplied vanilla MKWII iso and replaces some files. Often, it also patches the main.dol with some cheatcodes and patches it to load LE-CODE. Riivolution also does these file replacements, but on the wii itself (you need the original disc). For riivolution mods, the main.dol that replaces the original is already patched to contain the cheats and load LE-CODE.
+
+For the custom distribution part, Yuri already points is in the right direction; Emvolution, also by InvoxiPlayGames. Emvolution is basically a riivolution BrainSlug module. The problem with Emvolution is that it does not support patched main.dol files. However, most custom distributions rely on LE-CODE (for the scrollable cups selection screen for example). \
+
+This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = USA/JAP/PAL/KOR). In variety pack, E/J/P/K.bin also adds other functionality to the game.
 
 
-## Instructions:
+## Instructions (Wiimms Mario Kart Fun):
 - Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun 
 - Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes 
 - place the files in /root_SD on the root of your SD card 
-- Load a vanilla mario kart wii through USB-loader GX 
+- Load a vanilla mario kart wii through USB Loader GX 
 - Select options and set alternate dol to "load from USB/SD" 
 
 
+## Instruction (other distros)
+- Take a look at the ISO builder script or riivolution .xml file.
+- Mimic the replacements done using Emvolution. Edit replacements.h and compile. Replace the emvolution.mod inside root_SD/bslug/modules/
+- If you see some cheats being patched into main.dol in the ISO builder, take the .gct file and place it in root_SD/codes/RMCX01.gct
+
 ## Details
-- The KameKLoader looks for Loader.bin inside sd_Card:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
+- The KameKLoader looks for Loader.bin inside sd:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
 - For the same reason, Loader.bin looks for E/J/P/K.bin inside varietypack/ on the iso. Therefore, the replacements that Emvolution does should place these binaries there.
+- E/J/P/K.bin looks for lecode-XXX.bin inside the rel/ folder on the iso. Make sure emvolution puths the lecode-XXX.bin there!
 
 ## Module Descriptions
 Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
