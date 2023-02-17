@@ -4,7 +4,7 @@ This allows up to 12 players (2 per wii) to play together, no disc required!
 Also, with some modding it supports different custom distributions
 Only tested on PAL!
 
-Shoutouts:
+Shoutouts: \
 MrBean35000vr & Chadderz for their LAN Multiplayer brainslug mod (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) \
 Chadderz again for the work on Brainslug (https://github.com/Chadderz121/brainslug-wii) \
 InvokiPlayGames for his/her work on Emvolution (https://github.com/InvoxiPlayGames/emvolution) \
@@ -33,11 +33,11 @@ In variety pack, E/J/P/K.bin also adds other functionality to the game
 
 
 ## Instructions:
-Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun
-Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes
-place the files in /root_SD on the root of your SD card
-Load a vanilla mario kart wii through USB-loader GX
-Select options and set alternate dol to "load from USB/SD"
+Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun \
+Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes \
+place the files in /root_SD on the root of your SD card \
+Load a vanilla mario kart wii through USB-loader GX \
+Select options and set alternate dol to "load from USB/SD" \
 
 # Compiling the KamekLoader
 
