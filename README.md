@@ -5,12 +5,12 @@ Also, with some modding it supports different custom distributions
 Only tested on PAL!
 
 Shoutouts: \
-MrBean35000vr & Chadderz for their LAN Multiplayer brainslug mod (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) \
-Chadderz again for the work on Brainslug (https://github.com/Chadderz121/brainslug-wii) \
-InvokiPlayGames for his/her work on Emvolution (https://github.com/InvoxiPlayGames/emvolution) \
-Yuri Bacon for this post on mariokartwii.com (https://mariokartwii.com/showthread.php?tid=1891) \
-Lami for his KamekLoader brainslug module (https://github.com/Lami-Lemmy/brainslug-wii/tree/vp3Loader/modules/vpKamekLoader) \
-BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)\
+- MrBean35000vr & Chadderz for their LAN Multiplayer brainslug mod (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) 
+- Chadderz again for the work on Brainslug (https://github.com/Chadderz121/brainslug-wii) 
+- InvokiPlayGames for his/her work on Emvolution (https://github.com/InvoxiPlayGames/emvolution) 
+- Yuri Bacon for this post on mariokartwii.com (https://mariokartwii.com/showthread.php?tid=1891) 
+- Lami for his KamekLoader brainslug module (https://github.com/Lami-Lemmy/brainslug-wii/tree/vp3Loader/modules/vpKamekLoader) 
+- BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)
 
 Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
 
