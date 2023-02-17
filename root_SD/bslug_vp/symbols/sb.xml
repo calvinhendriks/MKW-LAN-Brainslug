@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Symbols in the gamespy/sb.h header -->
+<symbols>
+    <symbol name="ServerBrowserGetMyPublicIPAddr" size="0x8" offset="0x0" >
+        <data>
+            806306F0 4E800020
+        </data>
+    </symbol>
+</symbols>

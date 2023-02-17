@@ -1,0 +1,723 @@
+settings = 0x80004004
+memcpy = 0x80005f34
+RipFromDiscAsync__13SystemManagerFPcPvUiUiPUi = 0x8000b308                              
+snprintf = 0x80011938
+swprintf = 0x80017814
+sscanf = 0x80013040
+strcmp = 0x8001329c
+strcpy = 0x80013120
+strtok = 0x800134cc
+strstr = 0x800135f0
+cos = 0x8001b590
+sin = 0x8001ba98
+__construct_array = 0x80020ff4
+__construct_new_array = 0x80020e34
+__destroy_arr = 0x800210ec
+__destroy_new_array = 0x80021164
+__ptmf_scall = 0x80021450                   
+__cvt_fp2unsigned = 0x80021478
+_savefpr_14 = 0x800214d4
+_savefpr_15 = 0x800214d8
+_savefpr_16 = 0x800214dc
+_savefpr_17 = 0x800214e0
+_savefpr_18 = 0x800214e4
+_savefpr_19 = 0x800214e8
+_savefpr_20 = 0x800214ec
+_savefpr_21 = 0x800214f0
+_savefpr_22 = 0x800214f4
+_savefpr_23 = 0x800214f8
+_savefpr_24 = 0x800214fc
+_savefpr_25 = 0x80021500
+_savefpr_26 = 0x80021504
+_savefpr_27 = 0x80021508
+_savefpr_28 = 0x8002150c
+_savefpr_29 = 0x80021510
+_savefpr_30 = 0x80021514
+_savefpr_31 = 0x80021518
+_restfpr_14 = 0x80021520
+_restfpr_15 = 0x80021524
+_restfpr_16 = 0x80021528
+_restfpr_17 = 0x8002152c
+_restfpr_18 = 0x80021530
+_restfpr_19 = 0x80021534
+_restfpr_20 = 0x80021538
+_restfpr_21 = 0x8002153c
+_restfpr_22 = 0x80021540
+_restfpr_23 = 0x80021544
+_restfpr_24 = 0x80021548
+_restfpr_25 = 0x8002154c
+_restfpr_26 = 0x80021550
+_restfpr_27 = 0x80021554
+_restfpr_28 = 0x80021558
+_restfpr_29 = 0x8002155c
+_restfpr_30 = 0x80021560
+_restfpr_31 = 0x80021564
+
+
+
+Util_RandInt = 0x800f2ee0
+DVDConvertPathToEntryNum = 0x8015DF4C
+DVDOpen = 0x8015e2bc
+DVDClose = 0x8015e568
+DVDReadPrio = 0x8015e834
+ISFSCreateFile = 0x8016ac74
+ISFSOpen = 0x8016AE5C
+ISFSGetFileStats = 0x8016afdc
+ISFSRead = 0x8016B1FC
+ISFSClose = 0x8016B384
+ISFSWrite = 0x8016b2c0
+
+PSVECAdd = 0x8019abe4
+PSVECMag = 0x8019ac68
+
+
+
+
+NANDCreate__FPCcUcUc = 0x8019b43c
+NANDRead__FP12NANDFileInfoPvUi = 0x8019b7a4
+NANDWrite__FP12NANDFileInfoPvUi = 0x8019b884
+NANDGetLength__FP12NANDFileInfoPUi = 0x8019bf4c
+NANDOpen__FPCcP12NANDFileInfoUc = 0x8019c800
+NANDClose__FP12NANDFileInfo = 0x8019ca80
+NANDSeek__FP12NANDFileInfoii = 0x8019b964
+
+OSReport = 0x801A25D0
+OSFatal = 0x801a4ec4
+DCFlushRange = 0x801a162c
+ICInvalidateRange = 0x801a1710
+_OSLaunchTitle = 0x801ada00
+GXDrawDone = 0x8020ff98
+__nw__FUl = 0x80229dcc
+ __nwa__FUl = 0x80229df0
+__dl__FPv = 0x80229e14
+rkSystem = 0x802a4080
+
+systemManager = 0x80386000         
+
+
+##Documented Classes
+#nw4r
+OpenExtStream__Q34nw4r3snd15DVDSoundArchiveFPQ44nw4r3snd15DVDSoundArchive13DVDFileStreamUiPcUiUi = 0x800912c0
+InitHeadData__Q34nw4r3snd13DVDFileReaderFPQ34nw4r3snd12HEADdatabase = 0x800a5490
+DetailUtilCalcRandom__Q24nw4r3sndFv = 0x800ad050
+Seek__Q34nw4r2ut13DVDFileStreamFUiUi = 0x800b05e0
+
+
+#EGG
+LoadToMainRam__3EGGFPcPvPQ23EGG4HeapUiUiUiPUi = 0x802226d8
+alloc__Q23EGG4HeapFUliPQ23EGG4Heap = 0x80229814
+free__Q23EGG4HeapFPvPQ23EGG4Heap = 0x80229b84
+
+
+#inputData
+StoreCorrectInputDataSub = 0x80521554
+
+#Timer
+__dt__5TimerFv = 0x8051c334
+__mi__5TimerFP5Timer = 0x807ee860
+
+#raceInfo
+RaceinfoPlayerConstruct = 0x80533ed8
+__ct__14RaceinfoPlayerFUcUc = 0x80533ed8
+__dt__14RaceinfoPlayerFv = 0x80532f48
+
+#LakituController
+DisplayLap__11LakituModelFf = 0x8055a938
+
+#Mii
+InitModel__13MiiHeadsModelFP3MiiP13ModelDirectorUiUiUiUi =0x8055c580
+
+#playerHolder
+IsLocal__6PlayerFv = 0x80590650
+getPlayerIdx__14PlayerPointersFv = 0x80590a5c
+Compute__F9VehicleId11CharacterId = 0x80591fa4
+
+#ControlLoader
+Load__13ControlLoaderFPcPcPcPPCc = 0x805c2c60
+__ct__13ControlLoaderFP15LayoutUIControl = 0x805c2c18
+__dt__13ControlLoaderFv = 0x805c2c20                             
+#ScreenLayout
+__vt__18ParentScreenLayout = 0x808b950c
+ParentScreenLayout = 0x805E830C
+
+__vt__12ScreenLayout = 0x808b94c4
+ScreenLayout = 0x805e85a8
+dtScreenLayout = 0x805e8630
+
+#BMGThing
+BMGThing = 0x805f8b34
+dtBMGThing = 0x805f8b50
+
+#ControlGroup
+ControlGroup = 0x805C23E4
+dtControlGroup = 0x805c2400
+
+#Scene
+BuildScreens__5SceneF8MenuType = 0x8062c3a4
+ CreateScreen__5SceneF10ScreenType = 0x80622d08
+
+#PushButton
+HandleClick__10PushButtonFUiUi = 0x805be358
+
+#ScreenActionController
+SetHandler__22ScreenActionControllerF11ScreenInputP10ptmfHolderbb = 0x805f0d84
+
+#InteractableScreen
+LoadNextScreen__18InteractableScreenF10ScreenTypeUi =0x80837720    
+  
+#Screen
+dtScreen = 0x80601a04
+getPage = 0x805bb25c
+getNextScreen = 0x805bb278
+func_0x14 = 0x805bb254
+func_0x18 = 0x805bb24c
+func_0x1C = 0x806024b0
+func_0x20 = 0x80602530
+func_0x24 = 0x806025b0
+Init = 0x80601ad8
+getInstance = 0x805bb248
+func_0x30 = 0x805c9888
+func_0x34 = 0x805bb244
+func_0x38 = 0x805bb240
+func_0x3C = 0x805bb23c
+func_0x40 = 0x805bb238
+func_0x44 = 0x805bb234
+func_0x48 = 0x805bb230
+func_0x4C = 0x805bf2d8
+func_0x50 = 0x805bb22c
+func_0x54 = 0x805bb228
+func_0x58 = 0x805bb224
+func_0x5C = 0x805bb220
+get809cXXXX = 0x805bed68
+InitControlGroup__6ScreenFUi = 0x8060245c
+AddControl__6ScreenFUiP15LayoutUIControlUi = 0x8060246c
+
+#UIControl
+__vt__9UIControl = 0x808bf008                
+UIControl = 0x8063ce6c
+dtUIControl = 0x8063cfa0
+Init = 0x8063d004
+Update = 0x8063d044
+Draw = 0x8063D084
+InitSelf = 0x805BE600
+OnUpdate = 0x805bd2e0
+setPosition__9UIControlFv = 0x8063d194
+func_805BD2DC__9UIControlFv = 0x805BD2DC
+get809cXXXX = 0x80606bdc
+getClassName = 0x8063d3c0
+func_0x30 = 0x8063d608
+func_805bd2d8__9UIControlFv = 0x805bd2d8
+
+#LayoutUIControl
+__vt__15LayoutUIControl = 0x808befb4
+__ct__15LayoutUIControlFv = 0x8063d798
+__dt__15LayoutUIControlFv = 0x8063d8c0
+Init__15LayoutUIControlFv = 0x8063dac0
+Update__15LayoutUIControlFv = 0x8063DB00
+Draw__15LayoutUIControlFv = 0x8063DB84
+get809cXXXX = 0x80606bd0
+getClassName = 0x8063d788
+func_0x30__15LayoutUIControlFv = 0x8063E61c
+func_0x38__15LayoutUIControlFv = 0x8063D954
+SetText__15LayoutUIControlFUiP10ScreenText = 0x807e9a38
+SetMsgId__15LayoutUIControlFUiP10ScreenText = 0x8063ddb4
+
+#ControlGroup
+ControlGroup = 0x805C23E4
+dtControlGroup = 0x805c2400
+
+#UIAnimator
+UIAnimator = 0x8063c3ec
+dtAnimationThing = 0x8063c404
+PaneGroupById__10UIAnimatorFUi = 0x8063c820
+#PaneGroup
+DisplayAnimation__9PaneGroupFUif = 0x8063cb20
+
+#BMGThing
+GetMsgId__8BMGThingFi = 0x805f8c88
+
+#MenuData
+SetupMenuLoad = 0x805b9344
+StartTransition__8MenuDataFUiUi = 0x80635ac8
+
+#Scene
+BuildScreens__5SceneF8MenuType = 0x8062c3a4
+CreateScreen__5SceneF10ScreenType = 0x80622d08
+
+#PushButton
+__ct__10PushButtonFv = 0x805bd3a8
+__dt__10PushButtonFv  = 0x805bd4b0
+__vt__10PushButton = 0x808b776c
+HandleClick__10PushButtonFUiUi = 0x805be358
+SetOnClickHandler__10PushButtonFP37PtmfHolderBase_2A<v,P10PushButton,Ui>Uc =0x805bdac8
+
+SelectButton__10PushButtonFUi = 0x805bdb44
+InitButton__10PushButtonFPcPcPcUiUib = 0x805bd518
+SetOnClickHandler__10PushButtonFP35PtmfHolderBase_2A<P10PushButton,Ui>Uc = 0x805bdac8
+SelectFocus__10PushButtonFv = 0x805bdb58
+GetAnimationFrameSize__10PushButtonFv = 0x805bdf88
+
+#RadioButtonControl
+__ct__18RadioButtonControlFv = 0x80605724
+__dt__18RadioButtonControlFv = 0x806058c8
+InitLayout__18RadioButtonControlFUiUiPcPcPcPcPPCcUiUcUc = 0x8060594c
+Init__18RadioButtonControlFUc = 0x80605d74
+SetOnChangeHandler__18RadioButtonControlFP24RadioButtonChangeHandler = 0x80605d54
+SetOnSelectHandler__18RadioButtonControlFP24RadioButtonSelectHandler = 0x80605d6c
+
+#TextUpDownValueControl
+__ct__22TextUpDownValueControlFv = 0x806405d0
+__dt__22TextUpDownValueControlFv = 0x8064063c
+Init__22TextUpDownValueControlFv = 0x806407dc
+Update__22TextUpDownValueControlFv = 0x806408fc
+GetStaticInstanceAddr__22TextUpDownValueControlFv = 0x8064298c
+getClassName__22TextUpDownValueControlFv = 0x806405c0
+InitLayout__22TextUpDownValueControlFPcPcPcPcPc = 0x806406b0
+SetOnSelectHandler__22TextUpDownValueControlFP32UpDownDisplayedTextScrollHandler = 0x806407d4
+func_vtable__12UnkTextClassFv = 0x80642a50
+
+#UpDownDisplayedText
+__vt__19UpDownDisplayedText = 0x808bf3d8
+GetOnScrollHandler__19UpDownDisplayedTextFv = 0x80642A98
+Load__19UpDownDisplayedTextFUi = 0x80642A90
+OnSelectDeselect__19UpDownDisplayedTextFb = 0x80642A88
+SetMsgIDOnLoad__19UpDownDisplayedTextFP33TextUpDownValueControlTextControlUi = 0x80642A80
+OnScroll__19UpDownDisplayedTextFUiUc = 0x80642A78
+OnClick__19UpDownDisplayedTextFv = 0x80642A70
+Unk_0x20__19UpDownDisplayedTextFv = 0x80642A68
+Unk_0x24__19UpDownDisplayedTextFv = 0x80642A60
+Unk_0x28__19UpDownDisplayedTextFv = 0x80642A58
+Unk_0x2C__19UpDownDisplayedTextFv = 0x80642A50
+
+
+#UpDownControl
+__ct__13UpDownControlFv = 0x8063e960
+__dt__13UpDownControlFv = 0x8063eb5c
+InitLayout__13UpDownControlFUiUiPcPcPcPcPcPcPcP19UpDownDisplayedTextUiUcbbb = 0x8063ebdc
+SetOnChangeHandler__13UpDownControlFP19UpDownChangeHandler = 0x8063f020
+SetOnClickHandler__13UpDownControlFP18UpDownClickHandler = 0x8063f028
+SetOnElementSelectHandler__13UpDownControlFP26UpDownElementSelectHandler = 0x8063f030
+
+#ScreenElementActionHolder
+__vt__25ScreenElementActionHolder = 0x808b9a20
+
+
+
+#ScreenActionController
+__ct__22ScreenActionControllerFv = 0x805f09a8
+SetHandler__22ScreenActionControllerF11ScreenInputP10ptmfHolderbb = 0x805f0d84
+
+#CtrlMenuBackButton
+__vt__18CtrlMenuBackButton = 0x808d374c
+
+#CtrlMenuPageTitleText
+SetText__21CtrlMenuPageTitleTextFUiP10ScreenText = 0x807e987c
+SetText__23CtrlMenuInstructionTextFUiP10ScreenText  = 0x807e9a38
+
+
+#ScreenText
+ __ct__10ScreenTextFv = 0x805cd94c
+
+#CtrlRaceBase
+__vt__12CtrlRaceBase = 0x808d3a98
+__dt__12CtrlRaceBaseFv = 0x807ea8d8
+InitSelf__12CtrlRaceBaseFv = 0x807ec6e8
+get809cXXXX__12CtrlRaceBaseFv = 0x807ec8ec
+getClassName__12CtrlRaceBaseFv = 0x807ebf14
+UpdatePausePosition__12CtrlRaceBaseFv = 0x807ec3e0
+func_0x40__12CtrlRaceBaseFv = 0x807ec20c
+func_0x44__12CtrlRaceBaseFv = 0x807ebe40
+isPaused__12CtrlRaceBaseFv = 0x807ec3b0
+hasRaceStarted__12CtrlRaceBaseFv = 0x807ec3c4
+getPlayerId__12CtrlRaceBaseFv = 0x807ec7f8
+HudSlotColorEnabled__12CtrlRaceBaseFPcb = 0x807ebf20
+GetStaticInstanceAddr__12CtrlRaceBaseFv = 0x809c4010
+__vt__24CtrlRaceWifiStartMessage = 0x808d4110
+__dt__24CtrlRaceWifiStartMessageFv = 0x807F91F0
+OnUpdate__24CtrlRaceWifiStartMessageFv = 0x807f8c34
+GetStaticInstanceAddr__24CtrlRaceWifiStartMessageFv = 0x807f924c
+getClassName__24CtrlRaceWifiStartMessageFv = 0x807f8988
+func_0x40__24CtrlRaceWifiStartMessageFv = 0x807f8be8
+GetPane__24CtrlRaceWifiStartMessageFv = 0x807f91e8
+GetPane__12CtrlRaceBaseFv = 0x807ebe40
+isPaused__24CtrlRaceWifiStartMessageFv = 0x807f8bd8
+hasRaceStarted__24CtrlRaceWifiStartMessageFv = 0x807F8BA4
+GetPaneByName__10MainLayoutFPc = 0x805e8368
+
+#Screen
+__ct__6ScreenFv = 0x8060197c
+dtScreen = 0x80601a04
+getPage__6ScreenFv = 0x805bb25c
+getNextScreen__6ScreenFv = 0x805bb278
+func_0x14__6ScreenFv = 0x805bb254
+func_0x18__6ScreenFv = 0x805bb24c
+func_0x1C__6ScreenFv = 0x806024b0
+func_0x20__6ScreenFv = 0x80602530
+AddScreenLayer = 0x806025b0
+Init = 0x80601ad8
+ClearInstance__6ScreenFv = 0x805bb248
+OnLoad = 0x805c9888
+OnUnload__6ScreenFv = 0x805bb244
+OnActivate__6ScreenFv = 0x805bb240
+OnFocus__6ScreenFv = 0x805bb23c
+OnDefocus__6ScreenFv = 0x805bb238
+func_0x44__6ScreenFv = 0x805bb234
+BeforeChildUpdate__6ScreenFv = 0x805bb230
+AfterChildUpdate__6ScreenFv = 0x805bf2d8
+OnUpdate__6ScreenFv = 0x805bb22c
+OnResume__6ScreenFv = 0x805bb228
+func_0x58__6ScreenFv = 0x805bb224
+func_0x5C__6ScreenFv = 0x805bb220
+GetStaticInstanceAddr__6ScreenFv = 0x805bed68
+InitControlGroup__6ScreenFUi = 0x8060245c
+AddControl__6ScreenFUiP15LayoutUIControlUi = 0x8060246c
+SetActionController__6ScreenFP22ScreenActionController = 0x80602474
+EndStateAnimate__6ScreenFfUi = 0x80602488
+AddScreenLayer__6ScreenF10ScreenTypeUi = 0x806025b0
+SetTransitionSound__6ScreenFUiUi = 0x80602d20
+
+#InteractableScreen
+__vt__18InteractableScreen = 0x808d8d78
+__dt__18InteractableScreenFv = 0x80625d30
+getNextScreen__18InteractableScreenFv = 0x80838a70
+AddScreenLayer__18InteractableScreenF10ScreenTypeUi = 0x80837d1C
+Init = 0x80836b9c
+OnLoad__18InteractableScreenFv = 0x80837170
+OnActivate__18InteractableScreenFv = 0x808389d4
+OnDefocus__18InteractableScreenFv = 0x80838a78
+OnResume__18InteractableScreenFv = 0x80837d44
+GetStaticInstanceAddr__6ScreenFv = 0x805de838
+Init__18InteractableScreenFv = 0x80836b9c
+OnSelectChange = 0x808375ec
+LoadPrevScreen__18InteractableScreenFP10PushButton = 0x80837b4c
+LoadNextScreen__18InteractableScreenF10ScreenTypeP10PushButton = 0x80837720
+LoadPrevMenu__18InteractableScreenFP10PushButton = 0x808387ac
+
+#CustomSettingsPanel
+VSSettingsStaticAddr = 0x809c4618
+
+HandleStartPress__19CustomSettingsPanelFv = 0x80838b14
+
+ClearInstance__19CustomSettingsPanelFv = 0x80853a8c
+AfterChildUpdate__19CustomSettingsPanelFv = 0x80853650
+GetStaticInstanceAddr__19CustomSettingsPanelFv = 0x80853bd8
+OnSelectChange__19CustomSettingsPanelFv = 0x80853684
+GetLocalPlayerCount__19CustomSettingsPanelFv = 0x80853aa4
+GetUnk6C0__19CustomSettingsPanelFv = 0x80853a9c
+GetScreenActionController__19CustomSettingsPanelFv = 0x80853b08
+ResetSelection__19CustomSettingsPanelFUi = 0x808375f0
+SetSelection__19CustomSettingsPanelFUi = 0x8083752c
+Unk_0x7C__19CustomSettingsPanelFv = 0x80625d9c
+OnActionsLoaded__19CustomSettingsPanelFv = 0x808372e8
+
+InitExternalObject__19CustomSettingsPanelFP10PushButton = 0x80853aac
+GetScreenText__19CustomSettingsPanelFv = 0x808372e0
+InitVideos__19CustomSettingsPanelFv = 0x808387f8
+OnNextScreenButtonDeselect__19CustomSettingsPanelFv = 0x808536b0
+#RaceScreen
+dtRaceScreen = 0x80624764
+getNextScreen = 0x80633510
+func_0x20 = 0x80858a34
+Init = 0x80856278
+clearInstance = 0x80858a24
+func_0x34 = 0x80858a18
+func_0x48 = 0x80856cec
+func_0x4C = 0x808574b8
+get809cXXXX = 0x80858c10
+InitCtrlRaceBase__10RaceScreenFUi = 0x80857cc0
+getControlCount = 0x80857b08
+
+#AnimationThing
+AnimationThing = 0x8063c3ec
+dtAnimationThing = 0x8063c404
+EffectById__14AnimationThingFUi = 0x8063c820
+DisplayEffect = 0x8063cb20
+
+#ItemSlotData
+DecideItem = 0x807bb42c
+DecideRandomItem = 0x807bb8d0
+decideItem__12ItemSlotDataFiiiiP16ItemHolderPlayer = 0x807bb42c
+decideRandomItem__12ItemSlotDataFiiii = 0x807bb8d0
+
+#OptionsScreen 
+__ct__13OptionsScreenFv = 0x805fd518
+__dt__13OptionsScreenFv = 0x805fd638
+getNextScreen__13OptionsScreenFv = 0x80601060
+OnInit__13OptionsScreenFv = 0x805fd6e4
+ClearInstance__13OptionsScreenFv = 0x805fd8e4
+OnLoad__13OptionsScreenFv = 0x805fd8e8
+GetStaticInstanceAddr__13OptionsScreenFv = 0x80601068
+
+#VSSettingsScreen
+__ct__15VSSettingScreenFv = 0x806284c8
+
+HandleClick__13OptionsScreenFP10PushButtonUi = 0x805fd90c
+
+
+#Sound
+GetCourseMusicSlot = 0x807101f4
+ChangeMusic__12MusicHandlerF9RaceState = 0x80711ac4
+PlayBRSARSound__20RaceRSARSoundHandlerFUiUi = 0x80716608
+
+#Item
+Update__19ItemHolderPlayerSubFv = 0x80795668
+Update__16ItemHolderPlayerFv = 0x80797928
+Update__15PlayerInventoryFv = 0x807bc6e8
+#ptmf fake vtable
+ptmfVtable = 0x808BD2C4
+
+##Rel
+__dt__5TimerFv = 0x8051c334
+LoadFromU8 = 0x805411fc
+ResFile_LoadFromU8 = 0x8055b618
+LoadObjModelFromU8 = 0x8055b6a4
+ApplyDamage = 0x805675dc
+func_8058160c = 0x8058160c
+Player_getControllerHolder = 0x805903f4
+IsLocal__6PlayerFv = 0x80590650
+getPlayerIdx__14PlayerPointersFv = 0x80590a5c
+GetBrakeSound = 0x806fb444
+ScreenCtr_loadCtr = 0x805c2c60
+MenuData_loadNextMenu = 0x80634fbc
+RKNetController_ConnectToAnybodyAsync_VsRegionSet = 0x8065920c
+RKNetController_ConnectToAnybodyAsync_BtRegionSet = 0x80659260
+RKNetController_ConnectToGameServerFromGroupId_VsRegionSet = 0x80659724
+RKNetController_ConnectToGameServerFromGroupId_BtRegionSet = 0x80659778
+ChangeMusic = 0x80711ac4
+PlayBRSARSound = 0x80716608
+func_807907f8 = 0x807907f8
+CopyItemOBJPropertiesFromRelToTable = 0x80790e7c
+GenerateEvent = 0x8079C220
+UseMegaFunction = 0x807a9e50
+SubtractItem = 0x807BC97C
+__mi__5TimerFP5Timer = 0x807ee860
+
+##LE-CODE
+GreenShellSpeed = 0x808e5c8c
+RedShellSpeed = 0x808e5c94
+BlueShellSpeed = 0x808e5ca4
+WaitForGhostLoadDone = 0x806211dc
+LeCodeID = 0x80553e08
+
+
+#Static Instances
+inputData = 0x809bd70c
+raceData = 0x809bd728
+raceInfo = 0x809bd730
+playerHolder = 0x809c18f8
+menuData = 0x809c1e38
+rkNetController = 0x809c20d8
+musicHandler = 0x809c27f8
+playerModel = 0x809c2f38
+itemObjProperties = 0x809c2f48
+itemHolder = 0x809c3618
+itemSlotData = 0x809c3670
+itemBehaviourTable = 0x809c36a0
+raceScreen = 0x809c4680
+
+#Tests
+GetPosition = 0x8059020c
+
+#GX
+__GXAbort= 0x8016e6e4
+__GXCalculateVLim= 0x8016d8c4
+__GXCleanGPFifo= 0x8016d1fc
+__GXDefaultTexRegionCallback= 0x8016b49c
+__GXFifoInit= 0x8016d180
+__GXFlushTextureState= 0x80171c28
+__GXInitGX= 0x8016bd54
+__GXInitRevisionBits= 0x8016b720
+__GXIsGPFifoReady= 0x8016cebc
+__GXPEInit= 0x8016ee14
+__GXSaveFifo= 0x8016cdbc
+__GXSendFlushPrim= 0x8016f23c
+__GXSetDirtyState= 0x8016ee78
+__GXSetGenMode= 0x8016f414
+__GXSetIndirectMask= 0x80171bf8
+__GXSetMatrixIndex= 0x80173544
+__GXSetProjection= 0x80172fd8
+__GXSetSUTexRegs= 0x801712f0
+__GXSetTmemConfig= 0x80171458
+__GXSetVAT= 0x8016dfcc
+__GXSetVCD= 0x8016d814
+__GXSetViewport= 0x801732e8
+__GXShutdown= 0x8016b5b4
+__GXUpdateBPMask= 0x80171bf4
+CharWriter_SetupGX= 0x800b2ef0
+copyFromScreen__Q23EGG10CapTextureFiib8GXTexFmt= 0x80214c74
+GXAbortFrame= 0x8016e848
+GXBegin= 0x8016f0f0
+GXBeginDisplayList= 0x80172e00
+GXCallDisplayList= 0x80172f64
+GXClearBoundingBox= 0x8016fecc
+GXClearGPMetric= 0x80173df8
+GXClearVtxDesc= 0x8016dc34
+GXCopyDisp= 0x8016fc38
+GXCopyTex= 0x8016fd74
+GXCPInterruptHandler= 0x8016c668
+GXDisableBreakPt= 0x8016d138
+GXDrawDone= 0x8016eab0
+GXDrawSphere= 0x80172a30
+GXEnableBreakPt= 0x8016d098
+GXEnableTexOffsets= 0x8016f37c
+GXEndDisplayList= 0x80172eb4
+GXFinishInterruptHandler= 0x8016ed94
+GXFlush= 0x8016e654
+GXGetCPUFifo= 0x8016cf10
+GXGetCurrentGXThread= 0x8016d39c
+GXGetFifoCount= 0x8016d044
+GXGetFifoPtrs= 0x8016d030
+GXGetFifoWrap= 0x8016d04c
+GXGetGPFifo= 0x8016cfa0
+GXGetGPStatus= 0x8016cec4
+GXGetLightDir= 0x801701e0
+GXGetLightPos= 0x801701a8
+GXGetNumXfbLines= 0x8016f640
+GXGetProjectionv= 0x801730cc
+GXGetScissor= 0x80173498
+GXGetTexBufferSize= 0x80170614
+GXGetTexObjAll= 0x80170bf8
+GXGetTexObjData= 0x80170c5c
+GXGetTexObjFmt= 0x80170c90
+GXGetTexObjHeight= 0x80170c7c
+GXGetTexObjLODAll= 0x80170cbc
+GXGetTexObjMagFilt= 0x80170db4
+GXGetTexObjMinFilt= 0x80170da0
+GXGetTexObjMipMap= 0x80170cb0
+GXGetTexObjWidth= 0x80170c68
+GXGetTexObjWrapS= 0x80170c98
+GXGetTexObjWrapT= 0x80170ca4
+GXGetVtxAttrFmt= 0x8016e04c
+GXGetVtxAttrFmtv= 0x8016e2b8
+GXGetVtxDesc= 0x8016d9f0
+GXGetVtxDescv= 0x8016dba4
+GXGetYScaleFactor= 0x8016f6cc
+GXInit= 0x8016b850
+GXInitFifoBase= 0x8016c7c8
+GXInitLightAttn= 0x8016ff04
+GXInitLightAttnA= 0x8016ff20
+GXInitLightAttnK= 0x8016ff30
+GXInitLightColor= 0x80170314
+GXInitLightDir= 0x801701c4
+GXInitLightDistAttn= 0x801700c8
+GXInitLightPos= 0x80170198
+GXInitLightSpot= 0x8016ff40
+GXInitSpecularDir= 0x80170208
+GXInitTexCacheRegion= 0x8017103c
+GXInitTexObj= 0x801707f8
+GXInitTexObjCI= 0x80170a04
+GXInitTexObjFilter= 0x80170b6c
+GXInitTexObjLOD= 0x80170a4c
+GXInitTexObjLODBias= 0x80170b94
+GXInitTexObjWrapMode= 0x80170b50
+GXInitTlutObj= 0x80170f80
+GXInitTlutRegion= 0x801710f0
+GXInvalidateTexAll= 0x80171110
+GXInvalidateVtxCache= 0x8016e36c
+GXLoadLightObjImm= 0x80170320
+GXLoadNrmMtxImm= 0x80173188
+GXLoadNrmMtxIndx3x3= 0x801731e0
+GXLoadPosMtxImm= 0x8023040c
+GXLoadPosMtxImm= 0x8017310c
+GXLoadPosMtxIndx= 0x8017315c
+GXLoadTexMtxImm= 0x80173234
+GXLoadTexObj= 0x80170f2c
+GXLoadTexObjPreLoaded= 0x80170dc8
+GXLoadTlut= 0x80170fa8
+GXPokeAlphaMode= 0x8016eb94
+GXPokeAlphaRead= 0x8016eba4
+GXPokeAlphaUpdate= 0x8016ebbc
+GXPokeBlendMode= 0x8016ebd0
+GXPokeColorUpdate= 0x8016ec2c
+GXPokeDither= 0x8016ec58
+GXPokeDstAlpha= 0x8016ec40
+GXPokeZMode= 0x8016ec6c
+GXResetWriteGatherPipe= 0x8016e6b0
+GXSetAlphaCompare= 0x80172088
+GXSetAlphaUpdate= 0x801727f8
+GXSetArray= 0x8016e32c
+GXSetBlendMode= 0x8017277c
+GXSetBreakPtCallback= 0x8016d054
+GXSetChanAmbColor= 0x8017039c
+GXSetChanCtrl= 0x80170570
+GXSetChanMatColor= 0x80170474
+GXSetClipMode= 0x8017351c
+GXSetColorUpdate= 0x801727cc
+GXSetCoPlanar= 0x8016f3e0
+GXSetCopyClamp= 0x8016f618
+GXSetCopyClear= 0x8016f9c8
+GXSetCopyFilter= 0x8016fa40
+GXSetCPUFifo= 0x8016c94c
+GXSetCullMode= 0x8016f3b8
+GXSetCurrentMtx= 0x80173214
+GXSetDispCopyDst= 0x8016f4b8
+GXSetDispCopyFrame2Field= 0x8016f5f8
+GXSetDispCopyGamma= 0x8016fc24
+GXSetDispCopySrc= 0x8016f438
+GXSetDispCopyYScale= 0x8016f8fc
+GXSetDither= 0x80172930
+GXSetDrawDoneCallback= 0x8016ed50
+GXSetDrawSync= 0x8016e9fc
+GXSetDrawSyncCallback= 0x8016ec88
+GXSetDstAlpha= 0x8017295c
+GXSetFieldMask= 0x8017298c
+GXSetFieldMode= 0x801729c0
+GXSetFog= 0x801722cc
+GXSetFogRangeAdj= 0x80172658
+GXSetGPFifo= 0x8016cb2c
+GXSetGPMetric= 0x801735cc
+GXSetIndTexCoordScale= 0x80171968
+GXSetIndTexMtx= 0x80171814
+GXSetIndTexOrder= 0x80171a6c
+GXSetLineWidth= 0x8016f314
+GXSetMisc= 0x8016e5c8
+GXSetNumChans= 0x8017054c
+GXSetNumIndStages= 0x80171b38
+GXSetNumTevStages= 0x801722a8
+GXSetNumTexGens= 0x8016e5a4
+GXSetPixelFmt= 0x80172888
+GXSetPointSize= 0x8016f348
+GXSetProjection= 0x8017301c
+GXSetProjectionv= 0x80173080
+GXSetScissor= 0x80173430
+GXSetScissorBoxOffset= 0x801734e0
+GXSetTevAlphaIn= 0x80171d20
+GXSetTevAlphaOp= 0x80171db8
+GXSetTevColor= 0x80171e10
+GXSetTevColorIn= 0x80171ce0
+GXSetTevColorOp= 0x80171d60
+GXSetTevColorS10= 0x80171e70
+GXSetTevDirect= 0x80171b58
+GXSetTevIndirect= 0x801717ac
+GXSetTevIndWarp= 0x80171ba0
+GXSetTevKAlphaSel= 0x80171f80
+GXSetTevKColor= 0x80171ed4
+GXSetTevKColorSel= 0x80171f30
+GXSetTevOp= 0x80171c4c
+GXSetTevOrder= 0x8017214c
+GXSetTevSwapMode= 0x80171fd0
+GXSetTevSwapModeTable= 0x8017200c
+GXSetTexCoordBias= 0x801711fc
+GXSetTexCoordGen2= 0x8016e37c
+GXSetTexCoordScaleManually= 0x80171180
+GXSetTexCopyDst= 0x8016f4dc
+GXSetTexCopySrc= 0x8016f478
+GXSetTexRegionCallback= 0x80171158
+GXSetTlutRegionCallback= 0x8017116c
+GXSetViewport= 0x801733b4
+GXSetViewportJitter= 0x80173378
+GXSetVtxAttrFmt= 0x8016dc68
+GXSetVtxAttrFmtv= 0x8016de08
+GXSetVtxDesc= 0x8016d3a4
+GXSetVtxDescv= 0x8016d608
+GXSetZCompLoc= 0x80172858
+GXSetZMode= 0x80172824
+GXSetZScaleOffset= 0x80173400
+GXSetZTexture= 0x801720c0
+GXTexModeSync= 0x8016eb70
+GXTokenInterruptHandler= 0x8016eccc
+StateGX_ChangeProjectionv= 0x802417fc
+TPLGetGXTexObjFromPalette= 0x801b7544
+
+
+SetProjection__17RaceCameraManagerFUiUi = 0x80566020

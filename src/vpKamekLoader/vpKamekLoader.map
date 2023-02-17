@@ -1,0 +1,63 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 build/output.elf
+ .eh_frame      0x0000000000000000       0x60 build/output.elf
+ .data          0x0000000000000000        0x0 build/output.elf
+ .bss           0x0000000000000000        0x0 build/output.elf
+ .comment       0x0000000000000000       0x24 build/output.elf
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/output.elf
+
+.bslug.meta     0x0000000000000000       0x5a
+ *(.bslug.meta*)
+ .bslug.meta    0x0000000000000000       0x5a build/output.elf
+                0x0000000000000000                bslug_meta
+                0x0000000000000000                bslug_meta_license
+                0x000000000000000c                bslug_meta_author
+                0x0000000000000018                bslug_meta_version
+                0x0000000000000028                bslug_meta_bslug
+                0x0000000000000034                bslug_meta_name
+                0x0000000000000050                bslug_meta_game
+
+.bslug.load     0x000000000000005c        0xc
+ *(.bslug.load*)
+ .bslug.load    0x000000000000005c        0xc build/output.elf
+                0x000000000000005c                bslug_load
+                0x000000000000005c                bslug_load_SystemManager_loadSymbols
+
+.text           0x0000000000000068      0x224
+ *(.text*)
+ .text.vpKamekLoader
+                0x0000000000000068      0x224 build/output.elf
+
+.data
+ *(.data*)
+
+.rodata         0x000000000000028c       0x82
+ *(.rodata*)
+ .rodata.vpKamekLoader.str1.4
+                0x000000000000028c       0x67 build/output.elf
+ *fill*         0x00000000000002f3        0x1 
+ .rodata.str1.4
+                0x00000000000002f4       0x1a build/output.elf
+
+.bss            0x0000000000000310       0x58
+ *(.bss*)
+ .bss.fs.0      0x0000000000000310       0x50 build/output.elf
+ .bss.mounted   0x0000000000000360        0x1 build/output.elf
+                0x0000000000000360                mounted
+ *fill*         0x0000000000000361        0x3 
+ .bss.ret       0x0000000000000364        0x4 build/output.elf
+                0x0000000000000364                ret
+
+/DISCARD/
+ *(*)
+OUTPUT(vpKamekLoader.mod elf32-powerpc)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbols>
+    <!-- MKW specifc symbols (Theoretically multi-region, but only tested on RMCP) -->
+    <symbol name="SystemManager_loadSymbols" size="0xC4" offset="0x0" >
+        <data>
+            9421FFE0 7C0802A6 2C040000 7C852378
+            90010024 93E1001C 7C7F1B78 4???????
+        </data>
+    </symbol>
+</symbols>

@@ -1,0 +1,11 @@
+Dark-nes Theme for USB Loader GX v3.0
+
+- Change the font scale factor under Settings to "1" to get the proper font size.
+
+Credits to MrShrike for NES Console Controller Font.
+Credits to 3xhumed for his Cryonic Folder icon.
+Credits to dosiguale for his Samus Visor animation.
+Credits to Doctor-G fore his nes controller animations.
+
+Enjoy!
+

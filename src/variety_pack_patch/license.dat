@@ -1,0 +1,23 @@
+#######################################################
+#            MPC55xx MPC56xx V2.x                     #
+#######################################################
+INCREMENT Win32_PLUGINS_PPCCPU_MPC55xx metrowks 1.0 permanent \
+        uncounted A14591A89164 VENDOR_STRING="MPC55xx CPU Plugins" \
+        HOSTID=ANY ck=79 TS_OK
+INCREMENT Win32_CWIDE_Unlimited metrowks 5.5 permanent uncounted \
+        0CBFB52552B1 VENDOR_STRING="CodeWarrior IDE 4.2 or later, \
+        Windows" HOSTID=ANY ck=149 TS_OK
+INCREMENT Win32_Plugins_Comp_PPC metrowks 8.0 permanent uncounted \
+        195E3E33CA10 VENDOR_STRING="131072 bytes of code, PPC build \
+        tools" HOSTID=ANY ck=77 TS_OK
+INCREMENT WIN32_PLUGINS_PPC metrowks 8.0 permanent uncounted \
+        120885117B48 VENDOR_STRING="EPPC Plugins" HOSTID=ANY ck=97 \
+        TS_OK
+INCREMENT Win32_Plugins_Link_PPC_128K metrowks 8.0 permanent \
+        uncounted 34FDB3A631AF VENDOR_STRING="PPC linker" HOSTID=ANY \
+        TS_OK
+
+        
+#######################################################
+# Installer generated keys below, if any              #
+#######################################################

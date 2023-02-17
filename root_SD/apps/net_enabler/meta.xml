@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1.0">
+	<name>Offline Network Enabler</name>
+	<coder>Suloku</coder>
+	<version>0.1</version>
+	<release_date>20120907000000</release_date>
+	<short_description>Enable network connections</short_description>
+	<long_description>This applications allows to enable and use a network connection (set up from the wii's system menu configuration screen) even if there's no internet access, since the wii won't allow using a connection if it doesn't pass the internet test.
+
+Warning! This application writes to the nand.
+
+Nand access based on fstoolbox by Nicksasa and WiiPower</long_description>
+</app>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Symbols in the <rvl/OSLink.h> header -->
+<symbols>
+    <symbol name="OSLink" size="0x2C0" offset="0x14">
+        <data>
+            2C 03 00 00 7C 7A 1B 78 7C 9B 23 78 41 82 00 0C 83 E3 00 00 48 00 00 08 3B E0 00 00 83 04 00 28 80 04 00 2C 7C 78 02 14 38 03 00 07 7C 18 00 50
+		</data>
+    </symbol>
+</symbols>
