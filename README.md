@@ -35,6 +35,11 @@ For the custom distribution part, Yuri already points is in the right direction;
 
 This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = USA/JAP/PAL/KOR). In variety pack, E/J/P/K.bin also adds other functionality to the game.
 
+## 3. Prepping SD card
+The SD card needs to be formatted in a proper way, otherwise you will get green error screens.
+- First, Run SD Card Formatter from SD Card association (https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/) as Administrator. Select the correct SD card and click start.
+- Next, if your SD card is larger than 32GB (i.e. 64GB and up) run FAT32 GUI formatter as Administrator. Select your SD card and Set Allocation size unit to 4096 bytes. Make sure Quick Format is checked. Click on start.
+
 
 ## 4. Instructions (Wiimms Mario Kart Fun):
 - Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun 
@@ -80,3 +85,6 @@ Shoutouts:
 - BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)
 - Wiimm for his awesome work on Wiimms Mario Kart Fun (https://wiki.tockdom.com/wiki/Wiimms_Mario_Kart_Fun_2022-11) (and Wiimmfi and much more ofcourse)
 
+## 9. FAQ
+- Why do i need to format twice.
+The SD/SDHC/SDXC memory cards have a "Protected Area" on the card for the SD standard's security function. The SD Formatter (from SD Associatino) does not format the "Protected Area". The Wii is very picky when it comes to SD cards. I got the best results if i first ran this formatter. However, this tool sets the cluster size based on the total size of the SD card. According to this page (https://wiibrew.org/wiki/SD/SDHC_card_compatibility_tests), issues can sometimes be fixed by setting cluster size to 4096 bytes. This is where FAT32 GUI Formatter comes in.
