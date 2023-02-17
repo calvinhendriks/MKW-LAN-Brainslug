@@ -48,7 +48,7 @@ Finally, we have solved all issues and we are able to play MKWII Custom Track Di
 - LAN functionality from rmc-local-net.mod BrainSlug module (LAN Mod from Cadderz & MrBean35000vr)
 - Load cheats by using gct.mod BrainSlug module
 - Patch in the Custom Tracks through Emvolution.mod BrainSlug module
-- Patch in KamekLoader (Loader.bin) with KamekLoader.mod BrainSlug module. The KamekLoader loads E.bin, which in turn loads 
+- Patch in KamekLoader (Loader.bin) with KamekLoader.mod BrainSlug module. The KamekLoader loads E.bin, which in turn loads lecode-XXX.bin
 
 ## 5. Prepping SD card
 The SD card needs to be formatted in a proper way, otherwise you will get green error screens.
