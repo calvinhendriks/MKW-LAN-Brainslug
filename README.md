@@ -1,7 +1,7 @@
 # Mario Kart Wii LAN mode through brainslug
 Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) Custom Distributions in LAN mode. 
 This allows up to 12 players (2 per wii) to play together, no disc required! \
-
+\
 Only tested on PAL!
       
 
@@ -28,7 +28,7 @@ So, now 2 of the 3 problems indicated above are solved.
 Now we only need to solve the custom distribution issue. 
 Custom Distributions often come in 2 flavours: 
 - A ISO Builder script
-- A riivolution folder.
+- A riivolution folder. \
 These roughly do the same thing; The ISO Builder extracts the files from a supplied vanilla MKWII iso and replaces some files. Often, it also patches the main.dol with some cheatcodes and patches it to load LE-CODE. Riivolution also does these file replacements, but on the wii itself (you need the original disc). For riivolution mods, the main.dol that replaces the original is already patched to contain the cheats and load LE-CODE.
 
 For the custom distribution part, Yuri already points is in the right direction; Emvolution, also by InvoxiPlayGames. Emvolution is basically a riivolution BrainSlug module. The problem with Emvolution is that it does not support patched main.dol files. However, most custom distributions rely on LE-CODE (for the scrollable cups selection screen for example). \
