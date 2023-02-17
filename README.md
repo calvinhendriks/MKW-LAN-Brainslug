@@ -33,15 +33,10 @@ In variety pack, E/J/P/K.bin also adds other functionality to the game
 
 
 ## Instructions:
-Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun \
-Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes \
-place the files in /root_SD on the root of your SD card \
-Load a vanilla mario kart wii through USB-loader GX \
-Select options and set alternate dol to "load from USB/SD" \
+- Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun \
+- Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes \
+- place the files in /root_SD on the root of your SD card \
+- Load a vanilla mario kart wii through USB-loader GX \
+- Select options and set alternate dol to "load from USB/SD" 
 
-# Compiling the KamekLoader
 
-http://web.archive.org/web/20160602205749/http://www.nxp.com/products/software-and-tools/software-development-tools/codewarrior-development-tools/downloads/special-edition-software:CW_SPECIALEDITIONS
-# Compiling the KamekLoader Brainslug Module
-
-# Compiling Emvolution
