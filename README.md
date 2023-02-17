@@ -37,20 +37,20 @@ For the custom track distribution part, Yuri already points is in the right dire
 This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = USA/JAP/PAL/KOR). In variety pack, E/J/P/K.bin also adds other functionality to the game. \
 Finally, we have solved all issues and we are able to play MKWII Custom Track Distribution in LAN Mode without any disc, while also loading our beloved cheat codes.
 
-## 3. Summary
+## 4. Summary
 - Load ISO through BrainSlug by selecting alt dol file in USB Loader GX
-- LAN functionality from rmc-local-net.mod BrainSlug module(LAN Mod from Cadderz & MrBean35000vr)
+- LAN functionality from rmc-local-net.mod BrainSlug module (LAN Mod from Cadderz & MrBean35000vr)
 - Load cheats by using gct.mod BrainSlug module
 - Patch in the Custom Tracks through Emvolution.mod BrainSlug module
 - Patch in KamekLoader (Loader.bin) with KamekLoader.mod BrainSlug module. The KamekLoader loads E.bin, which in turn loads 
 
-## 3. Prepping SD card
+## 5. Prepping SD card
 The SD card needs to be formatted in a proper way, otherwise you will get green error screens.
 - First, Run SD Card Formatter from SD Card association (https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/) as Administrator. Select the correct SD card and click start.
 - Next, if your SD card is larger than 32GB (i.e. 64GB and up) run FAT32 GUI formatter as Administrator. Select your SD card and Set Allocation size unit to 4096 bytes. Make sure Quick Format is checked. Click on start.
 
 
-## 4. Instructions (Wiimms Mario Kart Fun):
+## 6. Instructions (Wiimms Mario Kart Fun):
 - Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun 
 - Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes 
 - place the files in /root_SD on the root of your SD card 
@@ -58,17 +58,17 @@ The SD card needs to be formatted in a proper way, otherwise you will get green 
 - Select options and set alternate dol to "load from USB/SD" 
 
 
-## 5. Instruction (other distros)
+## 7. Instruction (other distros)
 - Take a look at the ISO builder script or riivolution .xml file.
 - Mimic the replacements done using Emvolution. Edit replacements.h and compile. Replace the emvolution.mod inside root_SD/bslug/modules/
 - If you see some cheats being patched into main.dol in the ISO builder, take the .gct file and place it in root_SD/codes/RMCX01.gct
 
-## 6. Details
+## 8. Details
 - The KameKLoader looks for Loader.bin inside sd:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
 - For the same reason, Loader.bin looks for E/J/P/K.bin inside varietypack/ on the iso. Therefore, the replacements that Emvolution does should place these binaries there.
 - E/J/P/K.bin looks for lecode-XXX.bin inside the rel/ folder on the iso. Make sure emvolution puts the lecode-XXX.bin there!
 
-## 7. Module Descriptions
+## 9. Module Descriptions
 Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
 
 
@@ -83,7 +83,7 @@ Inside the bslug folder you will find 8 brainslug modules. Here is a short descr
 | KamekLoader.mod   | Module to load the kamek loader (Loader.bin).  Loader.bin loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = region) In variety pack, E/J/P/K.bin also adds other functionality to the game |
 | console-sd.mod    | creates a log file on root of sd.                                                                                                                                                                                                    |
 
-## 8. Credits
+## 10. Credits
 Shoutouts: 
 - MrBean35000vr & Chadderz for their LAN Multiplayer brainslug mod (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) 
 - Chadderz again for the work on Brainslug (https://github.com/Chadderz121/brainslug-wii) 
@@ -93,7 +93,7 @@ Shoutouts:
 - BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)
 - Wiimm for his awesome work on Wiimms Mario Kart Fun (https://wiki.tockdom.com/wiki/Wiimms_Mario_Kart_Fun_2022-11) (and Wiimmfi and much more ofcourse)
 
-## 9. FAQ
+## 11. FAQ
 - Why do i need to format twice?\
 The SD/SDHC/SDXC memory cards have a "Protected Area" on the card for the SD standard's security function. The SD Formatter (from SD Associatino) does not format the "Protected Area". \
 The Wii is very picky when it comes to SD cards. I got the best results if i first ran this formatter. However, this tool sets the cluster size based on the total size of the SD card. \
