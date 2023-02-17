@@ -1,12 +1,12 @@
 # Mario Kart Wii LAN mode through brainslug
-Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) Custom Distributions in LAN mode. 
+Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) Custom Track Distributions in LAN mode. 
 This allows up to 12 players (2 per wii) to play together, no disc required! \
 \
 Only tested on PAL!
       
 
 ## 1. Background
-I discovered MKW custom distributions in april 2017 and have played a lot of them since then. Somewhere in early 2021, during the Covid-19 pandemic, I was looking for a possibility to play my favorite game in a LAN setup, so I could play with 11 of my friends and have a major LAN party when the lockdowns would end.
+I discovered MKW custom track distributions in april 2017 and have played a lot of them since then. Somewhere in early 2021, during the Covid-19 pandemic, I was looking for a possibility to play my favorite game in a LAN setup, so I could play with 11 of my friends and have a major LAN party when the lockdowns would end.
 
 ### 1.1 Custom WFC
 At first, I found the possibility to host my own WFC server through this post: https://mariokartwii.com/showthread.php?tid=885. I had some nice lan parties using this setup, but at random times the consoles would disconnect.
@@ -14,7 +14,7 @@ At first, I found the possibility to host my own WFC server through this post: h
 ### 1.2 Brainslug LAN module
 I knew there was a LAN mod that makes the Wiis talk to each other directly (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) without the need for a server. This is a BrainSlug module, and BrainSlug is a disc patcher. Using the BrainSlug channel comes with a multitude of problems:
 - No way to load cheats
-- No support for custom distributions.
+- No support for custom track distributions.
 - No way to USB load the game
 
 While I was willing to buy 6 MKW discs, the first 2 problems are a major issue for me. The cheats are needed because by default, the character/vehicle & track selection menus have a timer of 30 seconds. If you want to take a break between races, this is not possible, since the wii's will automatically select a character/vehicle and a track and the next race will load. Another example is that by default, 30 seconds after the first player crosses the finish line, the game will end. In a large LAN setup,  there might be some skill differences and we would like everyone to be able to finish.
@@ -25,15 +25,24 @@ If you rename the boot.dol from BrainSlug to RCMX01.dol and place it on the root
 So, now 2 of the 3 problems indicated above are solved. 
 
 ## 3. Solution Pt II
-Now we only need to solve the custom distribution issue. 
-Custom Distributions often come in 2 flavours: 
-- A ISO Builder script
+Now we only need to solve the custom track distribution issue. 
+Custom Track Distributions often come in 2 flavours: 
+- An ISO Builder script
 - A riivolution folder. \
-These roughly do the same thing; The ISO Builder extracts the files from a supplied vanilla MKWII iso and replaces some files. Often, it also patches the main.dol with some cheatcodes and patches it to load LE-CODE. Riivolution also does these file replacements, but on the wii itself (you need the original disc). For riivolution mods, the main.dol that replaces the original is already patched to contain the cheats and load LE-CODE.
 
-For the custom distribution part, Yuri already points is in the right direction; Emvolution, also by InvoxiPlayGames. Emvolution is basically a riivolution BrainSlug module. The problem with Emvolution is that it does not support patched main.dol files. However, most custom distributions rely on LE-CODE (for the scrollable cups selection screen for example). \
+These roughly do the same thing; The ISO Builder extracts the files from a supplied vanilla MKWII iso and replaces some files. Often, it also patches the main.dol with some cheatcodes and patches it to load LE-CODE. Riivolution also does these file replacements, but on the wii itself (you need the original disc). For riivolution mods, the main.dol that replaces the original is already patched to contain the cheats and load LE-CODE. \
 
-This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = USA/JAP/PAL/KOR). In variety pack, E/J/P/K.bin also adds other functionality to the game.
+For the custom track distribution part, Yuri already points is in the right direction; Emvolution, also by InvoxiPlayGames. Emvolution is basically a riivolution BrainSlug module. The problem with Emvolution is that it does not support patched main.dol files. However, most custom distributions rely on LE-CODE (for the scrollable cups selection screen for example). \
+
+This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = USA/JAP/PAL/KOR). In variety pack, E/J/P/K.bin also adds other functionality to the game. \
+Finally, we have solved all issues and we are able to play MKWII Custom Track Distribution in LAN Mode without any disc, while also loading our beloved cheat codes.
+
+## 3. Summary
+- Load ISO through BrainSlug by selecting alt dol file in USB Loader GX
+- LAN functionality from rmc-local-net.mod BrainSlug module(LAN Mod from Cadderz & MrBean35000vr)
+- Load cheats by using gct.mod BrainSlug module
+- Patch in the Custom Tracks through Emvolution.mod BrainSlug module
+- Patch in KamekLoader (Loader.bin) with KamekLoader.mod BrainSlug module. The KamekLoader loads E.bin, which in turn loads 
 
 ## 3. Prepping SD card
 The SD card needs to be formatted in a proper way, otherwise you will get green error screens.
@@ -57,7 +66,7 @@ The SD card needs to be formatted in a proper way, otherwise you will get green 
 ## 6. Details
 - The KameKLoader looks for Loader.bin inside sd:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
 - For the same reason, Loader.bin looks for E/J/P/K.bin inside varietypack/ on the iso. Therefore, the replacements that Emvolution does should place these binaries there.
-- E/J/P/K.bin looks for lecode-XXX.bin inside the rel/ folder on the iso. Make sure emvolution puths the lecode-XXX.bin there!
+- E/J/P/K.bin looks for lecode-XXX.bin inside the rel/ folder on the iso. Make sure emvolution puts the lecode-XXX.bin there!
 
 ## 7. Module Descriptions
 Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
