@@ -1,6 +1,6 @@
-# Mario Kart Wii Lan through brainslug
+# Mario Kart Wii LAN mode through brainslug
 Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) Custom Distributions in LAN mode. 
-This allows up to 12 players (2 per wii) to play together, no disc required!\
+This allows up to 12 players (2 per wii) to play together, no disc required! \
 
 Only tested on PAL!
       
