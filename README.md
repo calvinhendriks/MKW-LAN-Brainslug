@@ -5,13 +5,13 @@ This allows up to 12 players (2 per wii) to play together, no disc required!\
 Only tested on PAL!
       
 
-## Background
+## 1. Background
 I discovered MKW custom distributions in april 2017 and have played a lot of them since then. Somewhere in early 2021, during the Covid-19 pandemic, I was looking for a possibility to play my favorite game in a LAN setup, so I could play with 11 of my friends and have a major LAN party when the lockdowns would end.
 
-### Custom WFC
+### 1.1 Custom WFC
 At first, I found the possibility to host my own WFC server through this post: https://mariokartwii.com/showthread.php?tid=885. I had some nice lan parties using this setup, but at random times the consoles would disconnect.
 
-### Brainslug LAN module
+### 1.2 Brainslug LAN module
 I knew there was a LAN mod that makes the Wiis talk to each other directly (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) without the need for a server. This is a BrainSlug module, and BrainSlug is a disc patcher. Using the BrainSlug channel comes with a multitude of problems:
 - No way to load cheats
 - No support for custom distributions.
@@ -19,12 +19,12 @@ I knew there was a LAN mod that makes the Wiis talk to each other directly (http
 
 While I was willing to buy 6 MKW discs, the first 2 problems are a major issue for me. The cheats are needed because by default, the character/vehicle & track selection menus have a timer of 30 seconds. If you want to take a break between races, this is not possible, since the wii's will automatically select a character/vehicle and a track and the next race will load. Another example is that by default, 30 seconds after the first player crosses the finish line, the game will end. In a large LAN setup,  there might be some skill differences and we would like everyone to be able to finish.
 
-### Solution Part 1
+## 2. Solution Pt I
 Then I discovered this post https://mariokartwii.com/showthread.php?tid=1891. In this post, Yuri explains the same problems as I had, but finds a solution that enables us to load a game from USB through the brainslug main.dol. Basically, you can tell USB loader GX to load an alternate dol file (other than the main.dol from the game).
 If you rename the boot.dol from BrainSlug to RCMX01.dol and place it on the root of your SD card, it will load BrainSlug and its modules and then the game. Unfortunately, loading cheats through USB Loader GX does not work this way. However, luckily InvoxiPlayGames made him a Gecko Code Handler BrainSlug Module (gct.mod).
 So, now 2 of the 3 problems indicated above are solved. 
 
-### Solution Part 2
+## 3. Solution Pt II
 Now we only need to solve the custom distribution issue. 
 Custom Distributions often come in 2 flavours: 
 - A ISO Builder script
@@ -36,7 +36,7 @@ For the custom distribution part, Yuri already points is in the right direction;
 This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = USA/JAP/PAL/KOR). In variety pack, E/J/P/K.bin also adds other functionality to the game.
 
 
-## Instructions (Wiimms Mario Kart Fun):
+## 4. Instructions (Wiimms Mario Kart Fun):
 - Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun 
 - Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes 
 - place the files in /root_SD on the root of your SD card 
@@ -44,17 +44,17 @@ This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.b
 - Select options and set alternate dol to "load from USB/SD" 
 
 
-## Instruction (other distros)
+## 5. Instruction (other distros)
 - Take a look at the ISO builder script or riivolution .xml file.
 - Mimic the replacements done using Emvolution. Edit replacements.h and compile. Replace the emvolution.mod inside root_SD/bslug/modules/
 - If you see some cheats being patched into main.dol in the ISO builder, take the .gct file and place it in root_SD/codes/RMCX01.gct
 
-## Details
+## 6. Details
 - The KameKLoader looks for Loader.bin inside sd:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
 - For the same reason, Loader.bin looks for E/J/P/K.bin inside varietypack/ on the iso. Therefore, the replacements that Emvolution does should place these binaries there.
 - E/J/P/K.bin looks for lecode-XXX.bin inside the rel/ folder on the iso. Make sure emvolution puths the lecode-XXX.bin there!
 
-## Module Descriptions
+## 7. Module Descriptions
 Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
 
 
@@ -70,7 +70,7 @@ Inside the bslug folder you will find 8 brainslug modules. Here is a short descr
 | gct.mod           | To load cheat codes  
 
 
-## Credits
+## 8. Credits
 Shoutouts: 
 - MrBean35000vr & Chadderz for their LAN Multiplayer brainslug mod (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) 
 - Chadderz again for the work on Brainslug (https://github.com/Chadderz121/brainslug-wii) 
