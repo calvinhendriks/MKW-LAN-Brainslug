@@ -1,4 +1,4 @@
-# Mario Kart Wii LAN mode through brainslug
+# Mario Kart Wii Custom Tracks in LAN mode through BrainSlug
 Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) Custom Track Distributions in LAN mode. 
 This allows up to 12 players (2 per wii) to play together, no disc required! \
 \
@@ -35,16 +35,16 @@ Now we only need to solve the custom track distribution issue.
 Custom Track Distributions often come in 2 flavours: 
 - An ISO Builder script
 - A riivolution folder. \
-
+\
 These roughly do the same thing; The ISO Builder extracts the files from a supplied vanilla MKWII iso and replaces some files. Often, it also patches the main.dol with some cheatcodes and patches it to load LE-CODE. Riivolution also does these file replacements, but on the wii itself (you need the original disc). For riivolution mods, the main.dol that replaces the original is already patched to contain the cheats and load LE-CODE. \
-
+\
 For the custom track distribution part, Yuri already points is in the right direction; Emvolution, also by InvoxiPlayGames. Emvolution is basically a riivolution BrainSlug module. The problem with Emvolution is that it does not support patched main.dol files. However, most custom distributions rely on LE-CODE (for the scrollable cups selection screen for example). \
-
+\
 This is where the KamekLoader comes in. KamekLoader (Loader.bin) loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = USA/JAP/PAL/KOR). In variety pack, E/J/P/K.bin also adds other functionality to the game. \
 Finally, we have solved all issues and we are able to play MKWII Custom Track Distribution in LAN Mode without any disc, while also loading our beloved cheat codes.
 
 ## 4. Summary
-- Load ISO through BrainSlug by selecting alt dol file in USB Loader GX
+- Load ISO or Disc through BrainSlug by selecting alt dol file in USB Loader GX
 - LAN functionality from rmc-local-net.mod BrainSlug module (LAN Mod from Cadderz & MrBean35000vr)
 - Load cheats by using gct.mod BrainSlug module
 - Patch in the Custom Tracks through Emvolution.mod BrainSlug module
@@ -57,8 +57,9 @@ The SD card needs to be formatted in a proper way, otherwise you will get green 
 
 
 ## 6. Instructions (Wiimms Mario Kart Fun):
+The files in root_SD are compiled to play Wiimms Mario Kart Fun 2022-11 in LAN mode. The only thing im missing is the cheat that Wiimm patches through the iso builder. He uses a rather unknown .gch file. Don't know exactly what features are enabled through this file, but the tracks load and the LAN mode works. Here's how to do it:/
 - Create a riivolution version of Wiimms Mario Kart Fun 2022-11 and place the files from riiv-sd-card\MKW-Fun-2022-11 inside root_SD/wiimms_mkw_fun 
-- Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes 
+- Create your .gct file (you can use this https://mariokartwii.com/gct/) and rename it to GAMEID.gct (e.g. RMCP01.gct for PAL) and place it in root_SD/codes  (check section 11 for recommended cheats)
 - place the files in /root_SD on the root of your SD card 
 - Load a vanilla mario kart wii through USB Loader GX 
 - Select options and set alternate dol to "load from USB/SD" 
@@ -99,7 +100,13 @@ Shoutouts:
 - BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)
 - Wiimm for his awesome work on Wiimms Mario Kart Fun (https://wiki.tockdom.com/wiki/Wiimms_Mario_Kart_Fun_2022-11) (and Wiimmfi and much more ofcourse)
 
-## 11. FAQ
+## 11. Recommended cheats
+I recommend these cheats for a relaxed LAN party!
+- Freeze Selection Timer (No 30sec timer on character/vehicle/track selection https://mariokartwii.com/showthread.php?tid=154) 
+- No Idle Disconnect (No disconnect after being idle: https://mariokartwii.com/showthread.php?tid=55) 
+- 30 Sec FinishTime Limit Mod (Change disconnect after first player has finished (https://mariokartwii.com/showthread.php?tid=1575) 
+- 
+## 12.  FAQ
 - Why do i need to format twice?\
 The SD/SDHC/SDXC memory cards have a "Protected Area" on the card for the SD standard's security function. The SD Formatter (from SD Associatino) does not format the "Protected Area". \
 The Wii is very picky when it comes to SD cards. I got the best results if i first ran this formatter. However, this tool sets the cluster size based on the total size of the SD card. \
