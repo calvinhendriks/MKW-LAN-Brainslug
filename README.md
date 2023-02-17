@@ -63,18 +63,16 @@ The SD card needs to be formatted in a proper way, otherwise you will get green 
 Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
 
 
-| **Module**        | **Description**                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| libfat.mod        | default module. needed for Emvolution                                                                                                                                                                              |
-| libsd.mod         | default module. needed for Emvolution                                                                                                                                                                              |
-| libfat-sd.mod     | default module. needed for Emvolution                                                                                                                                                                              |
-| rmc-local-net.mod | LAN Mod from Chadderz & MrBean35000vr                                                                                                                                                                              |
-| console-sd.mod    | creates a log file on root of sd.                                                                                                                                                                                  |
-| gct.mod           | To load cheat codes  
-
-| Emvolution.mod    | File replacements, like Riivolution. Does not support patched main.dol (e.g. to load le-code)                                                                                                                      |
-| KamekLoader.mod   | Module to load the kamek loader (loader.bin).   |
-
+| **Module**        | **Description**                                                                                                                                                                                                                      |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| rmc-local-net.mod | LAN Mod from Chadderz & MrBean35000vr                                                                                                                                                                                                |
+| gct.mod           | Module to load cheat codes through BrainSlug                                                                                                                                                                                         |
+| libfat.mod        | default module. needed for Emvolution                                                                                                                                                                                                |
+| libsd.mod         | default module. needed for Emvolution                                                                                                                                                                                                |
+| libfat-sd.mod     | default module. needed for Emvolution                                                                                                                                                                                                |
+| Emvolution.mod    | File replacements, like Riivolution. Does not support patched main.dol (e.g. to load le-code)                                                                                                                                        |
+| KamekLoader.mod   | Module to load the kamek loader (Loader.bin).  Loader.bin loads E/J/P/K.bin, taken from variety pack, which makes the game load lecode-XXX.bin (XXX = region) In variety pack, E/J/P/K.bin also adds other functionality to the game |
+| console-sd.mod    | creates a log file on root of sd.                                                                                                                                                                                                    |
 
 ## 8. Credits
 Shoutouts: 
