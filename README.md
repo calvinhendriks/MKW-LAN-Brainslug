@@ -1,14 +1,15 @@
 # Mario Kart Wii Lan through brainslug
 Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) Custom Distributions in LAN mode. 
-This allows up to 12 players (2 per wii) to play together, no disc required! \
+This allows up to 12 players (2 per wii) to play together, no disc required!\
 
 Only tested on PAL!
       
 
 ## Background
+I discovered MKW custom distributions in april 2017 and have played a lot of them since then. Somewhere in early 2021, during the Covid-19 pandemic, I was looking for a possibility to play my favorite game in a LAN setup, so I could play with 11 of my friends and have a major LAN party when the lockdowns would end.
+
 ### Custom WFC
-I have played custom distributions since april 2017 and I can't go back to vanilla ever since. I wanted to play Mario Kart Wii in a LAN setup since early 2020. 
-At first, I found the possibility to host my own WFC server through this post: https://mariokartwii.com/showthread.php?tid=885. I had some nice lan parties using this setup, but at random times the consoles would disconnect.  \
+At first, I found the possibility to host my own WFC server through this post: https://mariokartwii.com/showthread.php?tid=885. I had some nice lan parties using this setup, but at random times the consoles would disconnect.
 
 ### Brainslug LAN module
 I knew there was a LAN mod that makes the Wiis talk to each other directly (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) without the need for a server. This is a BrainSlug module, and BrainSlug is a disc patcher. Using the BrainSlug channel comes with a multitude of problems:
