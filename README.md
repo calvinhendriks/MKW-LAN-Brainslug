@@ -1,31 +1,9 @@
 # Mario Kart Wii Lan through brainslug
-Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) in LAN mode. 
-This allows up to 12 players (2 per wii) to play together, no disc required!
-Also, with some modding it supports different custom distributions
+Basically, this github combines a few projects in order to play Mario Kart Wii (MKW) Custom Distributions in LAN mode. 
+This allows up to 12 players (2 per wii) to play together, no disc required! \
+
 Only tested on PAL!
-
-Shoutouts: 
-- MrBean35000vr & Chadderz for their LAN Multiplayer brainslug mod (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) 
-- Chadderz again for the work on Brainslug (https://github.com/Chadderz121/brainslug-wii) 
-- InvokiPlayGames for his/her work on Emvolution (https://github.com/InvoxiPlayGames/emvolution) 
-- Yuri Bacon for this post on mariokartwii.com (https://mariokartwii.com/showthread.php?tid=1891) 
-- Lami for his KamekLoader brainslug module (https://github.com/Lami-Lemmy/brainslug-wii/tree/vp3Loader/modules/vpKamekLoader) 
-- BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)
-- Wiimm for his awesome work on Wiimms Mario Kart Fun (https://wiki.tockdom.com/wiki/Wiimms_Mario_Kart_Fun_2022-11) (and Wiimmfi and much more ofcourse)
-
-Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
-
-
-| **Module**        | **Description**                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| libfat.mod        | default module. needed for Emvolution                                                                                                                                                                              |
-| libsd.mod         | default module. needed for Emvolution                                                                                                                                                                              |
-| libfat-sd.mod     | default module. needed for Emvolution                                                                                                                                                                              |
-| Emvolution.mod    | File replacements, like Riivolution. Does not support patched main.dol (e.g. to load le-code)                                                                                                                      |
-| KamekLoader.mod   | Module to load the kamek loader (loader.bin).   |
-| rmc-local-net.mod | LAN Mod from Chadderz & MrBean35000vr                                                                                                                                                                              |
-| console-sd.mod    | creates a log file on root of sd.                                                                                                                                                                                  |
-| gct.mod           | To load cheat codes        
+      
 
 ## Background
 ### Custom WFC
@@ -60,4 +38,30 @@ Custom Distributions also often patch main.dol files to include cheat codes into
 ## Details
 - The KameKLoader looks for Loader.bin inside sd_Card:/varietypack/boot/loader.bin. This is hardcoded becaused the loader was originally made for Variety Pack V3.
 - For the same reason, Loader.bin looks for E/J/P/K.bin inside varietypack/ on the iso. Therefore, the replacements that Emvolution does should place these binaries there.
+
+## Module Descriptions
+Inside the bslug folder you will find 8 brainslug modules. Here is a short description:
+
+
+| **Module**        | **Description**                                                                                                                                                                                                    |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| libfat.mod        | default module. needed for Emvolution                                                                                                                                                                              |
+| libsd.mod         | default module. needed for Emvolution                                                                                                                                                                              |
+| libfat-sd.mod     | default module. needed for Emvolution                                                                                                                                                                              |
+| Emvolution.mod    | File replacements, like Riivolution. Does not support patched main.dol (e.g. to load le-code)                                                                                                                      |
+| KamekLoader.mod   | Module to load the kamek loader (loader.bin).   |
+| rmc-local-net.mod | LAN Mod from Chadderz & MrBean35000vr                                                                                                                                                                              |
+| console-sd.mod    | creates a log file on root of sd.                                                                                                                                                                                  |
+| gct.mod           | To load cheat codes  
+
+
+## Credits
+Shoutouts: 
+- MrBean35000vr & Chadderz for their LAN Multiplayer brainslug mod (https://www.chadsoft.co.uk/downloads/LAN_MKW_v0.9.zip) 
+- Chadderz again for the work on Brainslug (https://github.com/Chadderz121/brainslug-wii) 
+- InvokiPlayGames for his/her work on Emvolution (https://github.com/InvoxiPlayGames/emvolution) 
+- Yuri Bacon for this post on mariokartwii.com (https://mariokartwii.com/showthread.php?tid=1891) 
+- Lami for his KamekLoader brainslug module (https://github.com/Lami-Lemmy/brainslug-wii/tree/vp3Loader/modules/vpKamekLoader) 
+- BrawlBoxGaming for the KamekLoader itself (https://github.com/Brawlboxgaming/VP-Source)
+- Wiimm for his awesome work on Wiimms Mario Kart Fun (https://wiki.tockdom.com/wiki/Wiimms_Mario_Kart_Fun_2022-11) (and Wiimmfi and much more ofcourse)
 
