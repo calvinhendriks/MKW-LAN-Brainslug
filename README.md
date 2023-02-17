@@ -89,3 +89,9 @@ Shoutouts:
 The SD/SDHC/SDXC memory cards have a "Protected Area" on the card for the SD standard's security function. The SD Formatter (from SD Associatino) does not format the "Protected Area". \
 The Wii is very picky when it comes to SD cards. I got the best results if i first ran this formatter. However, this tool sets the cluster size based on the total size of the SD card. \
 According to this page (https://wiibrew.org/wiki/SD/SDHC_card_compatibility_tests), issues can sometimes be fixed by setting cluster size to 4096 bytes. This is where FAT32 GUI Formatter comes in.
+
+- Game does not load (green / black screen) \
+Check the RMCX.log on the root of the SD card. This tells you if files can't be found.
+
+- Game loads, but I get "An error has occured. Press the EJECT button, ..." \
+This is often when a license has been used before on different server. Please delete it and play from a fresh license.
