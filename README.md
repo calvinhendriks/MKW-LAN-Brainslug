@@ -116,10 +116,9 @@ I recommend these cheats for a relaxed LAN party!
 - Wifi time limit expansion (Extends default 5 minute race time limit: https://mariokartwii.com/showthread.php?tid=562)
 - Disable Online 6 min disconnect (Disables built-in DC at 5:56: https://mariokartwii.com/showthread.php?tid=1556)
 - My own code. This fixes a bug where if your friends choses a vehicle/character combo, you get DC at the "please wait a moment screen" after 3,5 minutes. This is for PAL:
--
-C2601C5C 00000002
-38000001 90030020
-60000000 00000000
+- - C2601C5C 00000002\
+38000001 90030020\
+60000000 00000000\
 
   
 ## 12.  FAQ
