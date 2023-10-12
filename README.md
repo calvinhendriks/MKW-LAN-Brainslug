@@ -112,8 +112,16 @@ Shoutouts:
 I recommend these cheats for a relaxed LAN party!
 - Freeze Selection Timer (No 30sec timer on character/vehicle/track selection https://mariokartwii.com/showthread.php?tid=154) 
 - No Idle Disconnect (No disconnect after being idle: https://mariokartwii.com/showthread.php?tid=55) 
-- 30 Sec FinishTime Limit Mod (Change disconnect after first player has finished (https://mariokartwii.com/showthread.php?tid=1575) 
-- 
+- 30 Sec FinishTime Limit Mod (Change disconnect after first player has finished: https://mariokartwii.com/showthread.php?tid=1575)
+- Wifi time limit expansion (Extends default 5 minute race time limit: https://mariokartwii.com/showthread.php?tid=562)
+- Disable Online 6 min disconnect (Disables built-in DC at 5:56: https://mariokartwii.com/showthread.php?tid=1556)
+- My own code. This fixes a bug where if your friends choses a vehicle/character combo, you get DC at the "please wait a moment screen" after 3,5 minutes. This is for PAL:
+-
+C2601C5C 00000002
+38000001 90030020
+60000000 00000000
+
+  
 ## 12.  FAQ
 - Why do i need to format twice?\
 The SD/SDHC/SDXC memory cards have a "Protected Area" on the card for the SD standard's security function. The SD Formatter (from SD Associatino) does not format the "Protected Area". \
