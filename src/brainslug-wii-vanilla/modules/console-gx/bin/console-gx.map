@@ -1,0 +1,80 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 build/output.elf
+ .eh_frame      0x0000000000000000      0x16c build/output.elf
+ .data          0x0000000000000000        0x0 build/output.elf
+ .bss           0x0000000000000000        0x0 build/output.elf
+ .comment       0x0000000000000000       0x24 build/output.elf
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/output.elf
+
+.bslug.meta     0x0000000000000000       0x52
+ *(.bslug.meta*)
+ .bslug.meta    0x0000000000000000       0x52 build/output.elf
+                0x0000000000000000                bslug_meta
+                0x0000000000000000                bslug_meta_license
+                0x000000000000000c                bslug_meta_author
+                0x000000000000001c                bslug_meta_version
+                0x000000000000002c                bslug_meta_bslug
+                0x0000000000000038                bslug_meta_name
+                0x0000000000000048                bslug_meta_game
+
+.bslug.load     0x0000000000000054       0x3c
+ *(.bslug.load*)
+ .bslug.load    0x0000000000000054       0x3c build/output.elf
+                0x0000000000000054                bslug_load_fwrite
+                0x0000000000000054                bslug_load
+                0x0000000000000060                bslug_load_DWC_SetLogMask
+                0x000000000000006c                bslug_load_GXSetDispCopyDst
+                0x0000000000000078                bslug_load_GXSetDispCopyFrame2Field
+                0x0000000000000084                bslug_load_VISetNextFrameBuffer
+
+.text           0x0000000000000090      0x644
+ *(.text*)
+ .text.Console_VISetNextFrameBuffer
+                0x0000000000000090       0x58 build/output.elf
+ .text.Console_GXSetDispCopyFrame2Field
+                0x00000000000000e8        0x8 build/output.elf
+ .text.Console_GXSetDispCopyDst
+                0x00000000000000f0       0x1c build/output.elf
+ .text.Console_DWC_SetLogMask
+                0x000000000000010c        0x8 build/output.elf
+ .text.Console_PutChar
+                0x0000000000000114      0x4a8 build/output.elf
+ .text.Console_fwrite
+                0x00000000000005bc      0x118 build/output.elf
+
+.data
+ *(.data*)
+
+.rodata         0x00000000000006d4      0x65d
+ *(.rodata*)
+ .rodata.console_font
+                0x00000000000006d4      0x600 build/output.elf
+ .rodata.str1.4
+                0x0000000000000cd4       0x5d build/output.elf
+
+.bss            0x0000000000000d34       0x18
+ *(.bss*)
+ .bss.console_frame_buffers
+                0x0000000000000d34        0x8 build/output.elf
+ .bss.console_fb_height
+                0x0000000000000d3c        0x4 build/output.elf
+ .bss.console_fb_width
+                0x0000000000000d40        0x4 build/output.elf
+ .bss.console_cursor_col
+                0x0000000000000d44        0x4 build/output.elf
+ .bss.console_cursor_row
+                0x0000000000000d48        0x4 build/output.elf
+
+/DISCARD/
+ *(*)
+OUTPUT(bin/console-gx.mod elf32-powerpc)

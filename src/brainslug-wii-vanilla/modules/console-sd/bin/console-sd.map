@@ -1,0 +1,63 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 build/output.elf
+ .eh_frame      0x0000000000000000       0x84 build/output.elf
+ .data          0x0000000000000000        0x0 build/output.elf
+ .bss           0x0000000000000000        0x0 build/output.elf
+ .comment       0x0000000000000000       0x24 build/output.elf
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/output.elf
+
+.bslug.meta     0x0000000000000000       0x5a
+ *(.bslug.meta*)
+ .bslug.meta    0x0000000000000000       0x5a build/output.elf
+                0x0000000000000000                bslug_meta
+                0x0000000000000000                bslug_meta_license
+                0x000000000000000c                bslug_meta_author
+                0x000000000000001c                bslug_meta_version
+                0x000000000000002c                bslug_meta_bslug
+                0x0000000000000038                bslug_meta_name
+                0x0000000000000050                bslug_meta_game
+
+.bslug.load     0x000000000000005c       0x18
+ *(.bslug.load*)
+ .bslug.load    0x000000000000005c       0x18 build/output.elf
+                0x000000000000005c                bslug_load_fwrite
+                0x000000000000005c                bslug_load
+                0x0000000000000068                bslug_load_DWC_SetLogMask
+
+.text           0x0000000000000074      0x1cc
+ *(.text*)
+ .text.Console_DWC_SetLogMask
+                0x0000000000000074        0x8 build/output.elf
+ .text.Console_fwrite
+                0x000000000000007c      0x1c4 build/output.elf
+
+.data           0x0000000000000240        0x4
+ *(.data*)
+ .data.sd_file.1
+                0x0000000000000240        0x4 build/output.elf
+
+.rodata         0x0000000000000244       0x27
+ *(.rodata*)
+ .rodata.Console_fwrite.str1.4
+                0x0000000000000244        0xd build/output.elf
+ *fill*         0x0000000000000251        0x3 
+ .rodata.str1.4
+                0x0000000000000254       0x17 build/output.elf
+
+.bss            0x000000000000026c       0x50
+ *(.bss*)
+ .bss.fs.0      0x000000000000026c       0x50 build/output.elf
+
+/DISCARD/
+ *(*)
+OUTPUT(bin/console-sd.mod elf32-powerpc)

@@ -1,0 +1,6 @@
+src/brainslug-wii-vanilla/bin
+src/brainslug-wii-vanilla/build
+src/brainslug-wii-vanilla/release
+src/brainslug-wii-vanilla/*.o
+src/brainslug-wii-vanilla/*.d
+src/brainslug-wii-vanilla/*.out

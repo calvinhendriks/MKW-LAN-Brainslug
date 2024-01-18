@@ -1,0 +1,64 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 build/output.elf
+ .eh_frame      0x0000000000000000       0x68 build/output.elf
+ .data          0x0000000000000000        0x0 build/output.elf
+ .bss           0x0000000000000000        0x0 build/output.elf
+ .comment       0x0000000000000000       0x24 build/output.elf
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/output.elf
+
+.bslug.meta     0x0000000000000000       0x7a
+ *(.bslug.meta*)
+ .bslug.meta    0x0000000000000000       0x7a build/output.elf
+                0x0000000000000000                bslug_meta
+                0x0000000000000000                bslug_meta_license
+                0x000000000000000c                bslug_meta_author
+                0x000000000000003c                bslug_meta_version
+                0x000000000000004c                bslug_meta_bslug
+                0x0000000000000058                bslug_meta_name
+                0x0000000000000070                bslug_meta_game
+
+.bslug.load     0x000000000000007c       0x18
+ *(.bslug.load*)
+ .bslug.load    0x000000000000007c       0x18 build/output.elf
+                0x000000000000007c                bslug_load_OSLink
+                0x000000000000007c                bslug_load
+                0x0000000000000088                bslug_load__start
+
+.text           0x0000000000000094      0x110
+ *(.text*)
+ .text._start_gecko
+                0x0000000000000094       0x70 build/output.elf
+ .text.OSLink_patches
+                0x0000000000000104       0xa0 build/output.elf
+
+.data
+ *(.data*)
+
+.rodata         0x00000000000001a4     0x10e8
+ *(.rodata*)
+ .rodata.OSLink_patches.str1.4
+                0x00000000000001a4       0x13 build/output.elf
+ *fill*         0x00000000000001b7        0x1 
+ .rodata.str1.4
+                0x00000000000001b8        0xf build/output.elf
+ *fill*         0x00000000000001c7        0x1 
+ .rodata.codehandler
+                0x00000000000001c8     0x10c4 build/output.elf
+
+.bss            0x000000000000128c       0x50
+ *(.bss*)
+ .bss.fs.0      0x000000000000128c       0x50 build/output.elf
+
+/DISCARD/
+ *(*)
+OUTPUT(bin/gctLoader.mod elf32-powerpc)

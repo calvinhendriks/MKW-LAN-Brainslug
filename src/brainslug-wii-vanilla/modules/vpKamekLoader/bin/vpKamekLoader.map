@@ -1,0 +1,98 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 build/output.elf
+ .rodata.numreplacements
+                0x0000000000000000        0x4 build/output.elf
+ .eh_frame      0x0000000000000000      0x17c build/output.elf
+ .data          0x0000000000000000        0x0 build/output.elf
+ .bss           0x0000000000000000        0x0 build/output.elf
+ .comment       0x0000000000000000       0x24 build/output.elf
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/output.elf
+
+.bslug.meta     0x0000000000000000       0x6e
+ *(.bslug.meta*)
+ .bslug.meta    0x0000000000000000       0x6e build/output.elf
+                0x0000000000000000                bslug_meta
+                0x0000000000000000                bslug_meta_license
+                0x000000000000000c                bslug_meta_author
+                0x000000000000002c                bslug_meta_version
+                0x000000000000003c                bslug_meta_bslug
+                0x0000000000000048                bslug_meta_name
+                0x0000000000000064                bslug_meta_game
+
+.bslug.load     0x0000000000000070       0x48
+ *(.bslug.load*)
+ .bslug.load    0x0000000000000070       0x48 build/output.elf
+                0x0000000000000070                bslug_load_DVDReadPrio
+                0x0000000000000070                bslug_load
+                0x000000000000007c                bslug_load_DVDClose
+                0x0000000000000088                bslug_load_DVDFastOpen
+                0x0000000000000094                bslug_load_DVDConvertPathToEntrynum
+                0x00000000000000a0                bslug_load_DVDOpen
+                0x00000000000000ac                bslug_load__start
+
+.text           0x00000000000000b8      0x6c4
+ *(.text*)
+ .text.vpKamekLoader
+                0x00000000000000b8      0x224 build/output.elf
+ .text.MyDVDOpen
+                0x00000000000002dc      0x168 build/output.elf
+ .text.MyDVDConvertPathToEntrynum
+                0x0000000000000444       0xe4 build/output.elf
+ .text.MyDVDClose
+                0x0000000000000528       0x50 build/output.elf
+ .text.MyDVDReadPrio
+                0x0000000000000578       0xd8 build/output.elf
+ .text.MyDVDFastOpen
+                0x0000000000000650      0x12c build/output.elf
+
+.data           0x000000000000077c      0xe58
+ *(.data*)
+ .data.replacements
+                0x000000000000077c      0xe58 build/output.elf
+                0x000000000000077c                replacements
+
+.rodata         0x00000000000015d4     0x5ea7
+ *(.rodata*)
+ .rodata.vpKamekLoader.str1.4
+                0x00000000000015d4       0x67 build/output.elf
+ *fill*         0x000000000000163b        0x1 
+ .rodata.MyDVDOpen.str1.4
+                0x000000000000163c       0x17 build/output.elf
+ *fill*         0x0000000000001653        0x1 
+ .rodata.MyDVDConvertPathToEntrynum.str1.4
+                0x0000000000001654       0x1d build/output.elf
+ *fill*         0x0000000000001671        0x3 
+ .rodata.MyDVDReadPrio.str1.4
+                0x0000000000001674       0x37 build/output.elf
+ *fill*         0x00000000000016ab        0x1 
+ .rodata.MyDVDFastOpen.str1.4
+                0x00000000000016ac       0x1f build/output.elf
+ *fill*         0x00000000000016cb        0x1 
+ .rodata.str1.4
+                0x00000000000016cc     0x5daf build/output.elf
+
+.bss            0x000000000000747c      0x824
+ *(.bss*)
+ .bss.fs.0      0x000000000000747c       0x50 build/output.elf
+ .bss.fs.1      0x00000000000074cc       0x50 build/output.elf
+ .bss.fs.2      0x000000000000751c       0x50 build/output.elf
+ .bss.fdlookup  0x000000000000756c      0x72c build/output.elf
+ .bss.mounted   0x0000000000007c98        0x1 build/output.elf
+                0x0000000000007c98                mounted
+ *fill*         0x0000000000007c99        0x3 
+ .bss.ret       0x0000000000007c9c        0x4 build/output.elf
+                0x0000000000007c9c                ret
+
+/DISCARD/
+ *(*)
+OUTPUT(bin/vpKamekLoader.mod elf32-powerpc)

@@ -1,0 +1,68 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 build/output.elf
+ .eh_frame      0x0000000000000000       0x74 build/output.elf
+ .data          0x0000000000000000        0x0 build/output.elf
+ .bss           0x0000000000000000        0x0 build/output.elf
+ .comment       0x0000000000000000       0x24 build/output.elf
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/output.elf
+
+.bslug.meta     0x0000000000000000       0x5e
+ *(.bslug.meta*)
+ .bslug.meta    0x0000000000000000       0x5e build/output.elf
+                0x0000000000000000                bslug_meta
+                0x0000000000000000                bslug_meta_license
+                0x0000000000000010                bslug_meta_author
+                0x000000000000001c                bslug_meta_version
+                0x000000000000002c                bslug_meta_bslug
+                0x0000000000000038                bslug_meta_name
+                0x0000000000000054                bslug_meta_game
+
+.bslug.load     0x0000000000000060       0x24
+ *(.bslug.load*)
+ .bslug.load    0x0000000000000060       0x24 build/output.elf
+                0x0000000000000060                bslug_load_DWCi_ProcessRecvMatchCommand
+                0x0000000000000060                bslug_load
+                0x000000000000006c                bslug_load_DWCi_ProcessMatchSynTimeout
+                0x0000000000000078                bslug_load_LAB_800e1b5c
+
+.text           0x0000000000000084       0x84
+ *(.text*)
+ .text.my_LAB_800e1b5c
+                0x0000000000000084       0x2c build/output.elf
+                0x0000000000000084                my_LAB_800e1b5c
+ .text.my_DWCi_ProcessMatchSynTimeout
+                0x00000000000000b0       0x2c build/output.elf
+                0x00000000000000b0                my_DWCi_ProcessMatchSynTimeout
+ .text.my_DWCi_ProcessRecvMatchCommand
+                0x00000000000000dc       0x2c build/output.elf
+                0x00000000000000dc                my_DWCi_ProcessRecvMatchCommand
+
+.data
+ *(.data*)
+
+.rodata         0x0000000000000108       0x49
+ *(.rodata*)
+ .rodata.my_LAB_800e1b5c.str1.4
+                0x0000000000000108        0xd build/output.elf
+ *fill*         0x0000000000000115        0x3 
+ .rodata.my_DWCi_ProcessMatchSynTimeout.str1.4
+                0x0000000000000118       0x1c build/output.elf
+ .rodata.my_DWCi_ProcessRecvMatchCommand.str1.4
+                0x0000000000000134       0x1d build/output.elf
+
+.bss
+ *(.bss*)
+
+/DISCARD/
+ *(*)
+OUTPUT(bin/dwcFunctions.mod elf32-powerpc)

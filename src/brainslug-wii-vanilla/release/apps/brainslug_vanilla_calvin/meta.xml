@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <app version="1">
+    <name>BrainSlug Wii VP</name>
+    <coder>Calvin</coder>
+    <version>v0.01</version>
+    <release_date>20231122</release_date>
+    <short_description>Loads bslug/modules/vanilla</short_description>
+    <long_description>Loads bslug/modules/vanilla</long_description>
+  </app>
