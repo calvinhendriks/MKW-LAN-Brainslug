@@ -76,16 +76,27 @@ uint32_t array_yay_woo[] = {
 #endif
 
 static void _start_patches(void) {
+
+	// fix for le-code distributions
+	if(((uint32_t *)&_start)[0x0] == 0x7ea802a6){
+		((uint32_t *)0x80000034)[0x0] = ((uint32_t *)0x80000034)[0x0] + 8;
+		((uint32_t *)0x80000034)[0x1] = ((uint32_t *)0x80000034)[0x1] + 8;
+	}
+	
 	// force us to know ourselves
 	DWC_ConnectToGameServerAsync2[0x3B] = 0x48000100;
 	DWC_ConnectToGameServerAsync2[0x7E] = 0x38000001;
+	
 	// work out where dwc_gamedata is
 	dwc_gamedata_offset = ((int16_t *)&dwc_process_status_record)[0xb];
+	
 	// stop the error condition preventing all online processing.
 	// TODO: this is actually patching the method starting 800ccc68 so this may not port.
 	((uint32_t *)&dwc_unknown_800ccc38)[0xF] = 0x60000000;
+	
 	// prevent error 5 when sending packets
 	dwc_unknown_800d577c[0x203] = 0x48000014;
+	
 	// disconnect gracefully on state machine lockup in joins
 	void *menu_data = get_port_address(9);
 	((uint32_t *)&dwc_think)[0x44] = 0x3c600000 + RELOC_HA(menu_data);
