@@ -78,9 +78,9 @@ uint32_t array_yay_woo[] = {
 static void _start_patches(void) {
 
 	// fix for le-code distributions
-	if(((uint32_t *)&_start)[0x0] == 0x7ea802a6){
-		((uint32_t *)0x80000034)[0x0] = ((uint32_t *)0x80000034)[0x0] + 8;
-		((uint32_t *)0x80000034)[0x1] = ((uint32_t *)0x80000034)[0x1] + 8;
+	if(*(uint32_t *)_start == 0x7ea802a6){
+		*(uint32_t *)0x80000034 = *(uint32_t *)0x80000034 + 8;
+		*(uint32_t *)0x80000038 = *(uint32_t *)0x80000038 + 8;
 	}
 	
 	// force us to know ourselves
