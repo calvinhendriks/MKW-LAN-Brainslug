@@ -78,9 +78,13 @@ uint32_t array_yay_woo[] = {
 static void _start_patches(void) {
 
 	// fix for le-code distributions
+	// check whether the first instruction of _start is the instruction mflr r21,
+	// and if so, correct the Arena High the Start of FST and the maximum FST size.
+	// very helpful reference for this topic https://wiibrew.org/wiki/Memory_map
 	if(*(uint32_t *)_start == 0x7ea802a6){
-		*(uint32_t *)0x80000034 = *(uint32_t *)0x80000034 + 8;
-		*(uint32_t *)0x80000038 = *(uint32_t *)0x80000038 + 8;
+		*(uint32_t *)0x80000034 = *(uint32_t *)0x80000034 + 8;	/* Arena High */
+		*(uint32_t *)0x80000038 = *(uint32_t *)0x80000038 + 8;	/* Start of FST */
+		*(uint32_t *)0x8000003c = *(uint32_t *)0x8000003c - 8;	/* Maximum FST Size */
 	}
 	
 	// force us to know ourselves
